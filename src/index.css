@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
@@ -21,6 +20,7 @@ body {
     width: 50px;
 }
 
+/* nav-link without scroll */
 .nav-link {
     text-transform: uppercase;
     position: relative;
@@ -36,7 +36,7 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #0db3c7;
+    background-color: white;
     transition: width 0.5s ease;
 }
 
@@ -47,16 +47,81 @@ body {
 
 .nav-item:hover .nav-link,
 .nav-link.active {
+    color: white !important;
+}
+
+/* end nav-link without scroll */
+
+
+/* nav-link with scroll */
+
+.bg-scroll {
+    background-color: white;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 20%);
+}
+
+.bg-scroll .nav-link {
+    text-transform: uppercase;
+    position: relative;
+    background-color: transparent !important;
+    color: black;
+}
+
+
+.bg-scroll .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #0db3c7;
+    transition: width 0.5s ease;
+}
+
+.bg-scroll .nav-item:hover .nav-link::before,
+.bg-scroll .nav-link.active::before {
+    width: 80%;
+}
+
+.bg-scroll .nav-item:hover .nav-link,
+.bg-scroll .nav-link.active {
     color: black !important;
+}
+
+.navbarToggler {
+    display: none;
 }
 
 /* end navbar */
 /* homeDiv */
-.homeDiv img {
+.homeDiv {
+    height: 100vh;
+    position: relative;
+    padding-top: 80px;
+}
+
+.homeImg {
+    position: absolute;
+    right: 0;
+    top: 0;
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100%;
-    z-index: -1;
+    height: 100%;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 /* end homeDiv */
@@ -83,4 +148,14 @@ body {
 
 .section:nth-child(even) {
     background-color: #621bc5;
+}
+
+@media (max-width: 767px) {
+    .navbarToggler {
+        display: block;
+    }
+
+    .navbar-brand {
+        background-color: white;
+    }
 }
