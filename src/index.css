@@ -150,12 +150,78 @@ body {
     background-color: #621bc5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+    .navbar {
+        background-color: white;
+        box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 20%);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        position: relative;
+        background-color: transparent !important;
+        color: black;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #0db3c7;
+        transition: width 0.5s ease;
+    }
+
+    .nav-item:hover .nav-link::before,
+    .nav-link.active::before {
+        width: 80%;
+    }
+
+    .nav-item:hover .nav-link,
+    .nav-link.active {
+        color: black !important;
+    }
+
     .navbarToggler {
         display: block;
     }
 
     .navbar-brand {
         background-color: white;
+    }
+
+    .nav-link {
+        width: fit-content;
+    }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
+
+    .navbarToggler:active {
+        border-color: #0db3c7 !important;
+    }
+
+    .navbarToggler:hover {
+        background-color: #0db3c7;
+        transition: all .3s;
+    }
+
+    .toggler {
+        color: #0db3c7;
+        font-size: 24px;
+    }
+
+    .navbarToggler:hover .toggler {
+        color: white;
+    }
+}
+
+@media (max-width: 991px) {
+    .homeImg {
+        display: none;
     }
 }
