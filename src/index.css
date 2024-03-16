@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    position: relative;
+    background-color: transparent !important;
+    color: white;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #0db3c7;
+    transition: width 0.5s ease;
+}
+
+.nav-item:hover .nav-link::before,
+.nav-link.active::before {
+    width: 80%;
+}
+
+.nav-item:hover .nav-link,
+.nav-link.active {
+    color: black !important;
+}
+
+/* end navbar */
+/* homeDiv */
+.homeDiv img {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    z-index: -1;
+}
+
+/* end homeDiv */
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.section:nth-child(odd) {
+    background-color: #9b67e5;
+}
+
+.section:nth-child(1) {
+    display: block;
+    background-color: transparent;
+    color: black;
+}
+
+.section:nth-child(even) {
+    background-color: #621bc5;
+}
