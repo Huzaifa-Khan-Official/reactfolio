@@ -193,8 +193,8 @@ body {
     background: #d27dfa;
     border-radius: 50%;
     position: absolute;
-    top: 100px;
-    left: 200px;
+    top: 15%;
+    left: 50%;
     animation: spin1 2s infinite alternate;
     z-index: -1;
 }
@@ -205,8 +205,8 @@ body {
     background: #00c99c;
     border-radius: 50%;
     position: absolute;
-    top: 100px;
-    left: 300px;
+    top: 10%;
+    left: 80%;
     animation: spin2 2s infinite alternate;
     z-index: -1;
 }
@@ -355,5 +355,15 @@ body {
 @media (max-width: 991px) {
     .homeImg {
         display: none;
+    }
+
+    .homeImgDiv {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .homeDiv .row h2 {
+        font-size: 40px;
     }
 }

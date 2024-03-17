@@ -32,8 +32,8 @@ export default function HomeDiv() {
                     </div>
                 </div>
 
-                <div className='col-lg-6 col-md-12 col-12'>
-                    <img src={homeDivImg} alt="" className='homeDivImg'/>
+                <div className='col-lg-6 col-md-12 col-12 homeImgDiv d-flex justify-content-center align-items-center'>
+                    <img src={homeDivImg} alt="" className='homeDivImg' />
                 </div>
             </div>
         </>

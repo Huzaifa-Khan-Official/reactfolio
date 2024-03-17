@@ -78,7 +78,7 @@ export default function Navbar() {
             </nav>
 
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" className="scrollspy-example bg-body-tertiary rounded-2" tabIndex="0">
-                <div id='home' className="homeDiv">
+                <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
                 <div id='service' className="section">
