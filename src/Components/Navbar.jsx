@@ -2,6 +2,7 @@ import navbarLogo from '../assets/navbarLogo.png'
 import bannerImg2 from '../assets/bannerImg2.svg'
 import { useEffect, useState } from 'react';
 import { FaBars } from "react-icons/fa";
+import HomeDiv from './HomeDiv';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -36,7 +37,7 @@ export default function Navbar() {
                     </a>
                     <button className="navbarToggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="togglerIcon">
-                            <FaBars className='toggler'/>
+                            <FaBars className='toggler' />
                         </span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,8 +79,7 @@ export default function Navbar() {
 
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" className="scrollspy-example bg-body-tertiary rounded-2" tabIndex="0">
                 <div id='home' className="homeDiv">
-                    <img src={bannerImg2} alt="" className='homeImg' />
-                    <h1>Home</h1>
+                    <HomeDiv />
                 </div>
                 <div id='service' className="section">
                     <h1>service</h1>
