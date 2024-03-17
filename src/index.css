@@ -13,7 +13,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-brand img {
@@ -97,7 +97,6 @@ body {
 /* end navbar */
 /* homeDiv */
 .homeDiv {
-    height: 100vh;
     position: relative;
     padding-top: 80px;
 }
@@ -113,6 +112,8 @@ body {
 
 .homeDiv .row {
     color: #040c2c;
+    position: relative;
+    z-index: 1;
 }
 
 .homeDiv .row h2 {
@@ -168,9 +169,10 @@ body {
     background: #fca249;
     border-radius: 50%;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 10%;
+    left: 10%;
     animation: spin1 2s infinite alternate;
+    z-index: -1;
 }
 
 .bubble3 {
@@ -179,9 +181,10 @@ body {
     background: #ff9398;
     border-radius: 50%;
     position: absolute;
-    top: 260px;
-    left: 150px;
+    top: 33%;
+    left: 15%;
     animation: spin1 2s infinite alternate;
+    z-index: -1;
 }
 
 .bubble1 {
@@ -193,6 +196,7 @@ body {
     top: 100px;
     left: 200px;
     animation: spin1 2s infinite alternate;
+    z-index: -1;
 }
 
 .bubble4 {
@@ -204,6 +208,7 @@ body {
     top: 100px;
     left: 300px;
     animation: spin2 2s infinite alternate;
+    z-index: -1;
 }
 
 .bubble5 {
@@ -212,9 +217,10 @@ body {
     background: #f1d53b;
     border-radius: 50%;
     position: absolute;
-    top: 180px;
-    left: 450px;
+    top: 30%;
+    left: 41%;
     animation: spin2 2s infinite alternate;
+    z-index: -1;
 }
 
 @keyframes spin1 {
@@ -247,6 +253,11 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+
+.homeDivImg {
+    width: 80%;
 }
 
 /* end homeDiv */
