@@ -3,6 +3,7 @@ import bannerImg2 from '../assets/bannerImg2.svg'
 import homeDivImg from '../assets/homeDivImg.png'
 import htmlIcon from '../assets/htmlIcon.png'
 import jsonIcon from '../assets/jsonIcon.png'
+import { TypeAnimation } from 'react-type-animation'
 
 export default function HomeDiv() {
     return (
@@ -20,7 +21,19 @@ export default function HomeDiv() {
                         <br />
                         I'm Huzaifa Khan
                         <br />
-                        Independent <span>Frelencer</span>
+                        <span>
+                            <TypeAnimation
+                                sequence={[
+                                    'freelancer',
+                                    2000,
+                                    'Frontend Developer',
+                                    2000,
+                                    'MERN Stack Devloper',
+                                    2000,
+                                ]}
+                                repeat={Infinity}
+                            />
+                        </span>
                     </h2>
 
                     <h4>
@@ -36,8 +49,8 @@ export default function HomeDiv() {
 
                 <div className='col-lg-6 col-md-12 col-12 homeImgDiv d-flex justify-content-center align-items-center'>
                     <img src={homeDivImg} alt="" className='homeDivImg' />
-                    <img src={htmlIcon} alt="" className='htmlIcon'/>
-                    <img src={jsonIcon} alt="" className='jsonIcon'/>
+                    <img src={htmlIcon} alt="" className='htmlIcon' />
+                    <img src={jsonIcon} alt="" className='jsonIcon' />
                 </div>
             </div>
         </>
