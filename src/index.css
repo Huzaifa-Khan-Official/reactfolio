@@ -260,6 +260,33 @@ body {
     width: 80%;
 }
 
+.homeImgDiv {
+    position: relative;
+}
+
+.htmlIcon {
+    position: absolute;
+    top: 5%;
+    animation: fadeInUp3 2s .5s infinite alternate-reverse both;
+}
+
+.jsonIcon {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    animation: fadeInUp3 2s .5s infinite alternate-reverse both;
+}
+
+@keyframes fadeInUp3 {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* end homeDiv */
 
 
@@ -362,8 +389,18 @@ body {
     }
 }
 
+@media (max-width: 540px) {
+    .htmlIcon, .jsonIcon {
+        width: 30px;
+    }
+}
+
 @media (max-width: 320px) {
     .homeDiv .row h2 {
         font-size: 40px;
+    }
+
+    .htmlIcon, .jsonIcon {
+        width: 20px;
     }
 }

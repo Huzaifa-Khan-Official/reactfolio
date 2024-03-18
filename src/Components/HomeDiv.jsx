@@ -1,6 +1,8 @@
 import React from 'react'
 import bannerImg2 from '../assets/bannerImg2.svg'
 import homeDivImg from '../assets/homeDivImg.png'
+import htmlIcon from '../assets/htmlIcon.png'
+import jsonIcon from '../assets/jsonIcon.png'
 
 export default function HomeDiv() {
     return (
@@ -34,6 +36,8 @@ export default function HomeDiv() {
 
                 <div className='col-lg-6 col-md-12 col-12 homeImgDiv d-flex justify-content-center align-items-center'>
                     <img src={homeDivImg} alt="" className='homeDivImg' />
+                    <img src={htmlIcon} alt="" className='htmlIcon'/>
+                    <img src={jsonIcon} alt="" className='jsonIcon'/>
                 </div>
             </div>
         </>
