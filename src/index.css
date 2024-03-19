@@ -304,6 +304,21 @@ body {
 .skillsSubTitle {
     font-size: 16px;
     text-align: center;
+    color: #868e96;
+}
+
+.iconsList {
+    list-style-type: none;
+}
+
+.skillsIcon {
+    font-size: 50px;
+    color: #868e96;
+}
+
+.skillsIconTitle {
+    color: #868e96;
+    font-size: 14px;
 }
 
 .skillsImg {
@@ -407,7 +422,7 @@ body {
         display: none;
     }
 
-    .homeImgDiv {
+    .homeImgDiv, .skillsIconDiv {
         margin-top: 50px;
     }
 }
