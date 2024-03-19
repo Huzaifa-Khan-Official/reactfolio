@@ -291,6 +291,27 @@ body {
 
 /* end homeDiv */
 
+/* skillDiv */
+.skillsDiv {
+    background-color: #fafafa;
+}
+
+.skillsHeading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.skillsSubTitle {
+    font-size: 16px;
+    text-align: center;
+}
+
+.skillsImg {
+    width: 50%;
+    height: 100%;
+}
+
+/* end skillsDiv */
 
 
 
@@ -392,7 +413,9 @@ body {
 }
 
 @media (max-width: 540px) {
-    .htmlIcon, .jsonIcon {
+
+    .htmlIcon,
+    .jsonIcon {
         width: 30px;
     }
 }
@@ -402,7 +425,8 @@ body {
         font-size: 40px;
     }
 
-    .htmlIcon, .jsonIcon {
+    .htmlIcon,
+    .jsonIcon {
         width: 20px;
     }
 }
