@@ -3,6 +3,7 @@ import bannerImg2 from '../assets/bannerImg2.svg'
 import { useEffect, useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
+import Skills from './Skills';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -82,7 +83,7 @@ export default function Navbar() {
                     <HomeDiv />
                 </div>
                 <div id='service' className="section">
-                    <h1>service</h1>
+                    <Skills />
                 </div>
                 <div id='portfolio' className="section">
                     <h1>portfolio</h1>

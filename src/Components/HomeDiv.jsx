@@ -28,7 +28,7 @@ export default function HomeDiv() {
                                     2000,
                                     'Frontend Developer',
                                     2000,
-                                    'MERN Stack Devloper',
+                                    'MERN Stack Developer',
                                     2000,
                                 ]}
                                 repeat={Infinity}
