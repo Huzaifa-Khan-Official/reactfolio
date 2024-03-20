@@ -82,7 +82,7 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='service' className="skillsDiv">
+                <div id='service' className="skillsDiv py-5">
                     <Skills />
                 </div>
                 <div id='portfolio' className="section">

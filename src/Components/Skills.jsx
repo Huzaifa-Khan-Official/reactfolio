@@ -1,6 +1,7 @@
 import React from 'react'
-import skillsImg from '../assets/skills.png'
-import { skillsIcons, skillsSubTitle } from '../Constants/Constants'
+import skillsImg from '../assets/skillsImg.svg'
+import servicesListIcon from '../assets/skillsListIcon.png'
+import { servicesList, skillsIcons, skillsSubTitle } from '../Constants/Constants'
 
 export default function Skills() {
     return (
@@ -28,6 +29,29 @@ export default function Skills() {
                                         <p className='skillsIconTitle'>
                                             {v.title}
                                         </p>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
+
+                <div className="servicesListDiv">
+                    {/* {
+                        servicesList.map((v, i) => {
+                            return <p key={i} className='servicesList'>
+                                <img src={servicesListIcon} className='servicesListIcon' alt="" />
+                                {v}
+                            </p>
+                        })
+                    } */}
+
+                    <ul className='servicesList'>
+                        {
+                            servicesList.map((v, i) => {
+                                return(
+                                    <li key={i}>
+                                        {v}
                                     </li>
                                 )
                             })

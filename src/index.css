@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fafafa;
 }
 
 /* navbar */
@@ -322,8 +323,27 @@ body {
 }
 
 .skillsImg {
-    width: 50%;
+    width: 70%;
     height: 100%;
+}
+
+
+.singleIcon:hover {
+    cursor: pointer;
+}
+
+.singleIcon:hover .skillsIcon {
+    color: #0db3c7;
+    transition: all .5s;
+}
+
+.servicesListIcon {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.servicesList {
+    list-style-image: url("./assets/skillsListIcon.png");
 }
 
 /* end skillsDiv */
@@ -422,7 +442,8 @@ body {
         display: none;
     }
 
-    .homeImgDiv, .skillsIconDiv {
+    .homeImgDiv,
+    .skillsIconDiv {
         margin-top: 50px;
     }
 }

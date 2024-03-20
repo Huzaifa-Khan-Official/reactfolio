@@ -30,6 +30,12 @@ const skillsIcons = [
         icon: <TbBrandNextjs />,
         title: "Nextjs"
     },
+];
+
+const servicesList = [
+    "Develop highly interactive Front end / User Interfaces for your websites.",
+    "Integration of third party services such as Firebase.",
+    "Can easily create responsive sites."
 ]
 
-export { skillsSubTitle, skillsIcons }
+export { skillsSubTitle, skillsIcons, servicesList }
