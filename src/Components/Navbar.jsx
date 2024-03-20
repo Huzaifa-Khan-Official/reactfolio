@@ -1,13 +1,13 @@
 import navbarLogo from '../assets/navbarLogo.png'
-import bannerImg2 from '../assets/bannerImg2.svg'
 import { useEffect, useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
-import Skills from './Skills';
+import Services from './Services';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isServices, setIsServices] = useState(false);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,9 +25,21 @@ export default function Navbar() {
     }, [scrolled]);
 
 
-    const handleClick = () => {
-        setIsOpen(!isOpen);
-    }
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const serviceDiv = document.getElementById("service");
+          const isServiceScrolled = window.scrollY > (serviceDiv.offsetHeight - 300);
+          setIsServices(isServiceScrolled); // Directly update isServices
+        };
+      
+        window.addEventListener('scroll', handleScroll);
+      
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
 
     return (
         <>
@@ -82,8 +94,8 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='service' className="skillsDiv py-5">
-                    <Skills />
+                <div id='service' className="servicesDiv py-5">
+                    <Services scrolled={isServices} />
                 </div>
                 <div id='portfolio' className="section">
                     <h1>portfolio</h1>

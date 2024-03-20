@@ -3,9 +3,9 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
-const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
+const servicesSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
-const skillsIcons = [
+const servicesIcons = [
     {
         icon: <FaHtml5 />,
         title: "Html-5"
@@ -35,7 +35,7 @@ const skillsIcons = [
 const servicesList = [
     "Develop highly interactive Front end / User Interfaces for your websites.",
     "Integration of third party services such as Firebase.",
-    "Can easily create responsive sites."
+    "Easily create responsive sites."
 ]
 
-export { skillsSubTitle, skillsIcons, servicesList }
+export { servicesSubTitle, servicesIcons, servicesList }

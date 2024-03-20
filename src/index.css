@@ -293,16 +293,16 @@ body {
 /* end homeDiv */
 
 /* skillDiv */
-.skillsDiv {
+.servicesDiv {
     background-color: #fafafa;
 }
 
-.skillsHeading {
+.servicesHeading {
     font-size: 30px;
     text-align: center;
 }
 
-.skillsSubTitle {
+.servicesSubTitle {
     font-size: 16px;
     text-align: center;
     color: #868e96;
@@ -312,19 +312,23 @@ body {
     list-style-type: none;
 }
 
-.skillsIcon {
+.servicesIcon {
     font-size: 50px;
     color: #868e96;
 }
 
-.skillsIconTitle {
+.servicesIconTitle {
     color: #868e96;
     font-size: 14px;
 }
 
-.skillsImg {
+.servicesImg {
     width: 70%;
     height: 100%;
+}
+
+.servicesImg.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
 }
 
 
@@ -332,7 +336,7 @@ body {
     cursor: pointer;
 }
 
-.singleIcon:hover .skillsIcon {
+.singleIcon:hover .servicesIcon {
     color: #0db3c7;
     transition: all .5s;
 }
@@ -342,11 +346,7 @@ body {
     margin: 0 10px;
 }
 
-.servicesList {
-    list-style-image: url("./assets/skillsListIcon.png");
-}
-
-/* end skillsDiv */
+/* end servicesDiv */
 
 
 
@@ -443,7 +443,7 @@ body {
     }
 
     .homeImgDiv,
-    .skillsIconDiv {
+    .servicesIconDiv {
         margin-top: 50px;
     }
 }
