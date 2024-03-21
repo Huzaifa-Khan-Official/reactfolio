@@ -1,5 +1,5 @@
 import navbarLogo from '../assets/navbarLogo.png'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Services from './Services';
@@ -7,6 +7,7 @@ import Services from './Services';
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [isServices, setIsServices] = useState(false);
+    const servicesRef = useRef(null);
 
 
     useEffect(() => {
@@ -28,17 +29,17 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-          const serviceDiv = document.getElementById("service");
-          const isServiceScrolled = window.scrollY > (serviceDiv.offsetHeight - 300);
-          setIsServices(isServiceScrolled); // Directly update isServices
+            const serviceDivHeight = servicesRef.current.offsetHeight;
+            const isServiceScrolled = window.scrollY > (serviceDivHeight - 500);
+            setIsServices(isServiceScrolled); // Directly update isServices
         };
-      
+
         window.addEventListener('scroll', handleScroll);
-      
+
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, []);
+    }, []);
 
 
     return (
@@ -94,7 +95,7 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='service' className="servicesDiv py-5">
+                <div id='service' className="servicesDiv py-5" ref={servicesRef} >
                     <Services scrolled={isServices} />
                 </div>
                 <div id='portfolio' className="section">

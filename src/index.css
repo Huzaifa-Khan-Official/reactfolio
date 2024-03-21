@@ -327,10 +327,29 @@ body {
     height: 100%;
 }
 
-.servicesImg.fadeInRight {
+.servicesIconDiv {
+    overflow-x: hidden;
+}
+
+.servicesImg.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out 0s 1 normal forwards;
+}
+
+.servicesIconDiv .fadeInRight {
     animation: fadeInRight 1s ease-in-out;
 }
 
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 .singleIcon:hover {
     cursor: pointer;
