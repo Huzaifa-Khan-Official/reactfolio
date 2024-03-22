@@ -5,7 +5,7 @@ import { skillsList, skillsIcons, skillsSubTitle } from '../Constants/Constants'
 
 export default function Skills({ scrolled }) {
     return (
-        <div className='row px-4 py-5'>
+        <div className='row px-4 py-5 pb-1'>
             <div className='col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center align-items-center'>
                 <img src={skillsImg} alt="" className={`skillsImg ${scrolled && "fadeInLeft"}`} />
             </div>
