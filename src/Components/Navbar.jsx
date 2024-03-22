@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
+import Services from './Services';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -98,8 +99,8 @@ export default function Navbar() {
                 <div id='skills' className="skillsDiv py-5" ref={skillsRef}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="section" >
-                    <h1>Services</h1>
+                <div id='service' className="services" >
+                    <Services />
                 </div>
                 <div id='portfolio' className="section">
                     <h1>portfolio</h1>
