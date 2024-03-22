@@ -293,16 +293,16 @@ body {
 /* end homeDiv */
 
 /* skillDiv */
-.servicesDiv {
+.skillsDiv {
     background-color: #fafafa;
 }
 
-.servicesHeading {
+.skillsHeading {
     font-size: 30px;
     text-align: center;
 }
 
-.servicesSubTitle {
+.skillsSubTitle {
     font-size: 16px;
     text-align: center;
     color: #868e96;
@@ -312,30 +312,30 @@ body {
     list-style-type: none;
 }
 
-.servicesIcon {
+.skillsIcon {
     font-size: 50px;
     color: #868e96;
 }
 
-.servicesIconTitle {
+.skillsIconTitle {
     color: #868e96;
     font-size: 14px;
 }
 
-.servicesImg {
+.skillsImg {
     width: 70%;
     height: 100%;
 }
 
-.servicesIconDiv {
+.skillsIconDiv {
     overflow-x: hidden;
 }
 
-.servicesImg.fadeInLeft {
+.skillsImg.fadeInLeft {
     animation: fadeInLeft 1s ease-in-out 0s 1 normal forwards;
 }
 
-.servicesIconDiv .fadeInRight {
+.skillsIconDiv .fadeInRight {
     animation: fadeInRight 1s ease-in-out;
 }
 
@@ -355,17 +355,17 @@ body {
     cursor: pointer;
 }
 
-.singleIcon:hover .servicesIcon {
+.singleIcon:hover .skillsIcon {
     color: #0db3c7;
     transition: all .5s;
 }
 
-.servicesListIcon {
+.skillsListIcon {
     width: 20px;
     margin: 0 10px;
 }
 
-/* end servicesDiv */
+/* end skillsDiv */
 
 
 
@@ -462,7 +462,7 @@ body {
     }
 
     .homeImgDiv,
-    .servicesIconDiv {
+    .skillsIconDiv {
         margin-top: 50px;
     }
 }

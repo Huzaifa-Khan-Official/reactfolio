@@ -2,12 +2,12 @@ import navbarLogo from '../assets/navbarLogo.png'
 import { useEffect, useRef, useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
-import Services from './Services';
+import Skills from './Skills';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-    const [isServices, setIsServices] = useState(false);
-    const servicesRef = useRef(null);
+    const [isSkills, setIsSkills] = useState(false);
+    const skillsRef = useRef(null);
 
 
     useEffect(() => {
@@ -29,9 +29,9 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const serviceDivHeight = servicesRef.current.offsetHeight;
-            const isServiceScrolled = window.scrollY > (serviceDivHeight - 500);
-            setIsServices(isServiceScrolled); // Directly update isServices
+            const serviceDivHeight = skillsRef.current.offsetHeight;
+            const isSkillscrolled = window.scrollY > (serviceDivHeight - 500);
+            setIsSkills(isSkillscrolled);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -63,6 +63,12 @@ export default function Navbar() {
                                 </a>
                             </li>
                             <li className="nav-item">
+                                <a className="nav-link" href="#skills">
+                                    skills
+                                    <span id="line"></span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
                                 <a className="nav-link" href="#service">
                                     service
                                     <span id="line"></span>
@@ -71,12 +77,6 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <a className="nav-link" href="#portfolio">
                                     portfolio
-                                    <span id="line"></span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#skills">
-                                    skills
                                     <span id="line"></span>
                                 </a>
                             </li>
@@ -95,14 +95,14 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='service' className="servicesDiv py-5" ref={servicesRef} >
-                    <Services scrolled={isServices} />
+                <div id='skills' className="skillsDiv py-5" ref={skillsRef}>
+                    <Skills scrolled={isSkills} />
+                </div>
+                <div id='service' className="section" >
+                    <h1>Services</h1>
                 </div>
                 <div id='portfolio' className="section">
                     <h1>portfolio</h1>
-                </div>
-                <div id='skills' className="section">
-                    <h1>Skills</h1>
                 </div>
                 <div id='contact' className="section">
                     <h1>Contact</h1>
