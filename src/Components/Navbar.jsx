@@ -8,7 +8,9 @@ import Services from './Services';
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [isSkills, setIsSkills] = useState(false);
+    const [servicesScroll, setServicesScroll] = useState(false);
     const skillsRef = useRef(null);
+    const servicesRef = useRef(null);
 
 
     useEffect(() => {
@@ -27,11 +29,10 @@ export default function Navbar() {
     }, [scrolled]);
 
 
-
     useEffect(() => {
         const handleScroll = () => {
-            const serviceDivHeight = skillsRef.current.offsetHeight;
-            const isSkillscrolled = window.scrollY > (serviceDivHeight - 500);
+            const skillsDivHeight = skillsRef.current.offsetHeight;
+            const isSkillscrolled = window.scrollY > (skillsDivHeight - 500);
             setIsSkills(isSkillscrolled);
         };
 
@@ -39,6 +40,22 @@ export default function Navbar() {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
+
+
+    useEffect(() => {
+        const handleServicesScroll = () => {
+            const serviceDivHeight = servicesRef.current.offsetHeight;
+            const isScrolled = window.scrollY > (serviceDivHeight - 600);
+            setServicesScroll(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleServicesScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleServicesScroll);
         };
     }, []);
 
@@ -96,11 +113,11 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef}>
+                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef} style={{ visibility: isSkills && "visible" }}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="services px-3 pb-0 pb-lg-4" >
-                    <Services />
+                <div id='service' className="services px-3 pb-0 pb-lg-4" ref={servicesRef} style={{ visibility: servicesScroll && "visible" }}>
+                    <Services scrolled={servicesScroll} />
                 </div>
                 <div id='portfolio' className="section">
                     <h1>portfolio</h1>

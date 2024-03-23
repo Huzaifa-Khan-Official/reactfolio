@@ -295,6 +295,7 @@ body {
 /* skillDiv */
 .skillsDiv {
     background-color: #fafafa;
+    visibility: hidden;
 }
 
 .skillsHeading {
@@ -351,6 +352,18 @@ body {
     }
 }
 
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .singleIcon:hover {
     cursor: pointer;
 }
@@ -368,6 +381,10 @@ body {
 /* end skillsDiv */
 
 /* servicesDiv */
+.services {
+    visibility: hidden;
+}
+
 .sevicesIcon {
     font-size: 24px;
 }
@@ -375,6 +392,24 @@ body {
 .servicesHeading {
     margin-bottom: 0;
     font-size: 30px;
+}
+
+.servicesHeading.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out 0s 1 normal forwards;
+}
+
+.services .row.fadeInBottom {
+    animation: fadeInBottom 1s ease 0s 1 normal none;
+}
+
+.cardDiv {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 20px 20px;
+    transition: all .3s;
+}
+
+.cardDiv:hover {
+    transform: scale(1.04);
 }
 
 /* end servicesDiv */
