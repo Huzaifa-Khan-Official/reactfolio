@@ -371,9 +371,12 @@ body {
 .sevicesIcon {
     font-size: 24px;
 }
-.serviceHeading h3 {
+
+.servicesHeading {
     margin-bottom: 0;
+    font-size: 30px;
 }
+
 /* end servicesDiv */
 
 .section {

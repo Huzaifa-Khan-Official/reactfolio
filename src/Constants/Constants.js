@@ -1,10 +1,11 @@
-import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
+// skillsIcons
 const skillsIcons = [
     {
         icon: <FaHtml5 />,
@@ -13,6 +14,10 @@ const skillsIcons = [
     {
         icon: <FaCss3Alt />,
         title: "css3"
+    },
+    {
+        icon: <FaBootstrap />,
+        title: "Bootstrap"
     },
     {
         icon: <IoLogoJavascript />,
@@ -32,12 +37,14 @@ const skillsIcons = [
     },
 ];
 
+// skillsList
 const skillsList = [
     "Develop highly interactive Front end / User Interfaces for your websites.",
     "Integration of third party services such as Firebase.",
     "Easily create responsive sites."
 ]
 
+// servicesList
 const servicesList = [
     {
         title: "Website Development",

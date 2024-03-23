@@ -96,10 +96,10 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='skills' className="skillsDiv py-5 pb-0 pb-lg-4" ref={skillsRef}>
+                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="services pb-0 pb-lg-4" >
+                <div id='service' className="services px-3 pb-0 pb-lg-4" >
                     <Services />
                 </div>
                 <div id='portfolio' className="section">
