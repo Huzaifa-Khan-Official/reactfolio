@@ -2,6 +2,7 @@ import { FaBootstrap, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
+import dummyImage from '../assets/dummyImage.png'
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
@@ -74,6 +75,20 @@ const servicesList = [
         title: "Integration with APIs",
         description: "Integrate third-party APIs (such as social media APIs, or data APIs) into web applications using JavaScript and frameworks like React.js. Ensure secure and efficient data exchange between systems."
     },
+]
+
+// portfolio
+const portfolio = [
+    {
+        images: [
+            dummyImage,
+            dummyImage,
+            dummyImage
+        ],
+        title: "Dummy Website",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
+        link: "https://github.com/Huzaifa-Khan-Official"
+    }
 ]
 
 export { skillsSubTitle, skillsIcons, skillsList, servicesList }

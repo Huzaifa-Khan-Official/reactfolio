@@ -389,17 +389,26 @@ body {
     font-size: 24px;
 }
 
-.servicesHeading {
+.servicesTitle {
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.serviceHeading  h4 {
+    font-size: 20px;
 }
 
 .servicesHeading.fadeInLeft {
     animation: fadeInLeft 1s ease-in-out 0s 1 normal forwards;
 }
 
+.serviceDesc {
+    color: #586069;
+}
+
 .services .row.fadeInBottom {
-    animation: fadeInBottom 1s ease 0s 1 normal none;
+    animation: fadeInBottom 1.5s ease 0s 1 normal none;
 }
 
 .cardDiv {
@@ -409,6 +418,8 @@ body {
 }
 
 .cardDiv:hover {
+    cursor: pointer;
+    font-size: 16px;
     transform: scale(1.04);
 }
 

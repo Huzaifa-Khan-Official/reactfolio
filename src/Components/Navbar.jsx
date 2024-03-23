@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
 import Services from './Services';
+import Portfolio from './Portfolio';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -48,7 +49,7 @@ export default function Navbar() {
     useEffect(() => {
         const handleServicesScroll = () => {
             const serviceDivHeight = servicesRef.current.offsetHeight;
-            const isScrolled = window.scrollY > (serviceDivHeight - 600);
+            const isScrolled = window.scrollY > (serviceDivHeight - 500);
             setServicesScroll(isScrolled);
         };
 
@@ -116,11 +117,11 @@ export default function Navbar() {
                 <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef} style={{ visibility: isSkills && "visible" }}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="services px-3 pb-0 pb-lg-4" ref={servicesRef} style={{ visibility: servicesScroll && "visible" }}>
+                <div id='service' className="services px-3 my-5" ref={servicesRef} style={{ visibility: servicesScroll && "visible" }}>
                     <Services scrolled={servicesScroll} />
                 </div>
-                <div id='portfolio' className="section">
-                    <h1>portfolio</h1>
+                <div id='portfolio' className="portfolio">
+                    <Portfolio />
                 </div>
                 <div id='contact' className="section">
                     <h1>Contact</h1>

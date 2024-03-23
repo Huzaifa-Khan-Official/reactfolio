@@ -4,7 +4,7 @@ import { servicesList } from "../Constants/Constants";
 export default function Services({ scrolled }) {
     return (
         <>
-            <h3 className={`servicesHeading ps-4 ${scrolled && "fadeInLeft"}`}>
+            <h3 className={`servicesTitle ps-5 ${scrolled && "fadeInLeft"}`}>
                 What I do
             </h3>
             <div className={`row px-3 justify-content-center gap-4 my-4 ${scrolled && "fadeInBottom"}`}>
@@ -18,11 +18,13 @@ export default function Services({ scrolled }) {
                                             <BsJournalBookmarkFill className="sevicesIcon" />
                                         </div>
                                         <div className="serviceHeading">
-                                            <h3>{singleService.title}</h3>
+                                            <h4>{singleService.title}</h4>
                                         </div>
                                     </div>
-                                    <div className="serviceDesc">
-                                        {singleService.description}
+                                    <div className="serviceDescDiv">
+                                        <p className="serviceDesc">
+                                            {singleService.description}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
