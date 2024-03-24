@@ -2,7 +2,11 @@ import { FaBootstrap, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import dummyImage from '../assets/dummyImage.png'
+
+import bannerImg2 from '../assets/bannerImg2.svg'
+import banner from '../assets/crm-banner.webp'
+import skills from '../assets/skills.png'
+import homeDivImg from '../assets/homeDivImg.png'
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
@@ -81,14 +85,37 @@ const servicesList = [
 const portfolio = [
     {
         images: [
-            dummyImage,
-            dummyImage,
-            dummyImage
+            bannerImg2,
+            banner,
+            skills,
+            homeDivImg
         ],
         title: "Dummy Website",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
         link: "https://github.com/Huzaifa-Khan-Official"
-    }
+    },
+    {
+        images: [
+            bannerImg2,
+            banner,
+            skills,
+            homeDivImg
+        ],
+        title: "Dummy Website",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
+        link: "https://github.com/Huzaifa-Khan-Official"
+    },
+    {
+        images: [
+            bannerImg2,
+            banner,
+            skills,
+            homeDivImg
+        ],
+        title: "Dummy Website",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
+        link: "https://github.com/Huzaifa-Khan-Official"
+    },
 ]
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio }

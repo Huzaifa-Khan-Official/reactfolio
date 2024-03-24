@@ -430,30 +430,35 @@ body {
     display: none;
 }
 
-.carousel.carousel-slider {
-    height: 170px;
-    width: 170px !important;
+.singlePortfolio {
+    border: 1px solid;
 }
 
-.carousel .slider-wrapper {
+.singlePortfolio .carousel.carousel-slider {
+    height: 150px;
+    width: 150px !important;
+}
+
+.singlePortfolio .carousel .slider-wrapper {
     height: 150px;
 }
 
-.slide img {
+.singlePortfolio .slide img {
     object-fit: cover;
     height: 150px;
 }
 
-.carousel.carousel-slider .control-arrow:hover {
+.singlePortfolio .carousel.carousel-slider .control-arrow:hover {
     background-color: transparent;
 }
 
-.carousel .control-dots {
+.singlePortfolio .carousel .control-dots {
     margin: 0 !important;
 }
 
-.carousel .control-dots .dot {
-    background-color: black !important;
+.singlePortfolio .carousel .control-dots .dot {
+    /* background-color: black !important; */
+    display: none;
 }
 
 /* end portfolio */
