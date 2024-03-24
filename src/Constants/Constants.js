@@ -3,7 +3,6 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
-import bannerImg2 from '../assets/bannerImg2.svg'
 import banner from '../assets/crm-banner.webp'
 import skills from '../assets/skills.png'
 import homeDivImg from '../assets/homeDivImg.png'
@@ -85,7 +84,6 @@ const servicesList = [
 const portfolio = [
     {
         images: [
-            bannerImg2,
             banner,
             skills,
             homeDivImg
@@ -96,7 +94,6 @@ const portfolio = [
     },
     {
         images: [
-            bannerImg2,
             banner,
             skills,
             homeDivImg
@@ -107,7 +104,6 @@ const portfolio = [
     },
     {
         images: [
-            bannerImg2,
             banner,
             skills,
             homeDivImg

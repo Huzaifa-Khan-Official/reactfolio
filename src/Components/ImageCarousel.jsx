@@ -5,7 +5,7 @@ export default function ImageCarousel({ images }) {
 
 
     return (
-        <Carousel infiniteLoop>
+        <Carousel autoPlay infiniteLoop>
             {
                 images.map((image, index) => {
                     return (

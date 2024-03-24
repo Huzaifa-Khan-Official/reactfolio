@@ -293,9 +293,13 @@ body {
 /* end homeDiv */
 
 /* skillDiv */
-.skillsDiv {
-    background-color: #fafafa;
+.portfolio, .skillsDiv {
+    background-color: white;
     visibility: hidden;
+}
+
+.skillsDiv {
+    padding-bottom: 70px !important;
 }
 
 .skillsHeading {
@@ -383,6 +387,7 @@ body {
 /* servicesDiv */
 .services {
     visibility: hidden;
+    background-color: #fafafa;
 }
 
 .sevicesIcon {
@@ -390,9 +395,12 @@ body {
 }
 
 .servicesTitle {
-    margin-bottom: 0;
     font-size: 40px;
-    font-weight: 400;
+    color: #0db3c7;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .serviceHeading h4 {
@@ -427,40 +435,60 @@ body {
 
 /* portfolio */
 .portfolio {
-    padding: 0 30px;
+    padding: 40px 30px;
+}
+
+.portfolioTitleDiv h5 {
+    color: #0db3c7;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.portfolioTitleDiv h2 {
+    color: #040c2c;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-transform: capitalize;
 }
 
 .thumbs {
     display: none;
 }
 
+.carousel-root {
+    height: 200px;
+}
+
+.singlePortfolio .carousel .slider-wrapper,
+.carousel.carousel-slider,
+.slider {
+    height: 100%;
+}
+
 .singlePortfolio {
-    border: 1px solid;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 10px 20px;
 }
 
-.singlePortfolio .carousel.carousel-slider {
-    height: 150px;
-}
-
-.singlePortfolio .carousel .slider-wrapper {
-    height: 150px;
+.singlePortfolio h3 {
+    box-shadow: 0px -15px 10px -15px rgba(17, 17, 17, 0.5);
 }
 
 .singlePortfolio .slide img {
-    object-fit: cover;
-    height: 150px;
+    object-fit: contain;
+    height: 100%;
 }
 
-.singlePortfolio .carousel.carousel-slider .control-arrow:hover {
-    background-color: transparent;
+.carousel .carousel-status {
+    color: black !important;
 }
 
 .singlePortfolio .carousel .control-dots {
     margin: 0 !important;
-}
-
-.singlePortfolio .carousel .control-dots .dot {
-    /* background-color: black !important; */
     display: none;
 }
 

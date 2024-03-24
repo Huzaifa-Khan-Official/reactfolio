@@ -10,8 +10,10 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [isSkills, setIsSkills] = useState(false);
     const [servicesScroll, setServicesScroll] = useState(false);
+    const [portfolioScroll, setPortfolioScroll] = useState(false);
     const skillsRef = useRef(null);
     const servicesRef = useRef(null);
+    const portfolioRef = useRef(null);
 
 
     useEffect(() => {
@@ -32,8 +34,8 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const skillsDivHeight = skillsRef.current.offsetHeight;
-            const isSkillscrolled = window.scrollY > (skillsDivHeight - 500);
+            const skillsDivHeight = skillsRef.current.offsetHeight - 500;
+            const isSkillscrolled = window.scrollY > skillsDivHeight;
             setIsSkills(isSkillscrolled);
         };
 
@@ -48,9 +50,9 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleServicesScroll = () => {
-            const serviceDivHeight = servicesRef.current.offsetHeight;
-            const isScrolled = window.scrollY > (serviceDivHeight - 500);
-            setServicesScroll(isScrolled);
+            const serviceDivHeight = servicesRef.current.offsetHeight - 500;
+            const isServicesScroll = window.scrollY > serviceDivHeight;
+            setServicesScroll(isServicesScroll);
         };
 
         window.addEventListener('scroll', handleServicesScroll);
@@ -58,6 +60,23 @@ export default function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleServicesScroll);
         };
+
+    }, []);
+
+
+    useEffect(() => {
+        const handlePortfolioScroll = () => {
+            const portfolioDivHeight = portfolioRef.current.offsetHeight + 1000;
+            const isPortfolioScroll = window.scrollY > portfolioDivHeight;
+            setPortfolioScroll(isPortfolioScroll);
+        };
+
+        window.addEventListener('scroll', handlePortfolioScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handlePortfolioScroll);
+        };
+
     }, []);
 
 
@@ -120,8 +139,8 @@ export default function Navbar() {
                 <div id='service' className="services px-3 my-5" ref={servicesRef} style={{ visibility: servicesScroll && "visible" }}>
                     <Services scrolled={servicesScroll} />
                 </div>
-                <div id='portfolio' className="portfolio">
-                    <Portfolio />
+                <div id='portfolio' className="portfolio" ref={portfolioRef} style={{ visibility: portfolioScroll && "visible" }}>
+                    <Portfolio scrolled={portfolioScroll}/>
                 </div>
                 <div id='contact' className="section">
                     <h1>Contact</h1>
