@@ -395,7 +395,7 @@ body {
     font-weight: 400;
 }
 
-.serviceHeading  h4 {
+.serviceHeading h4 {
     font-size: 20px;
 }
 
@@ -424,6 +424,39 @@ body {
 }
 
 /* end servicesDiv */
+
+/* portfolio */
+.thumbs {
+    display: none;
+}
+
+.carousel.carousel-slider {
+    height: 170px;
+    width: 170px !important;
+}
+
+.carousel .slider-wrapper {
+    height: 150px;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 150px;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: transparent;
+}
+
+.carousel .control-dots {
+    margin: 0 !important;
+}
+
+.carousel .control-dots .dot {
+    background-color: black !important;
+}
+
+/* end portfolio */
 
 .section {
     width: 100%;
