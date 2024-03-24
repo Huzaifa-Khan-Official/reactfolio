@@ -2,8 +2,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 export default function ImageCarousel({ images }) {
-
-
     return (
         <Carousel autoPlay infiniteLoop>
             {

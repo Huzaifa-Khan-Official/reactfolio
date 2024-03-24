@@ -293,7 +293,8 @@ body {
 /* end homeDiv */
 
 /* skillDiv */
-.portfolio, .skillsDiv {
+.portfolio,
+.skillsDiv {
     background-color: white;
     visibility: hidden;
 }
@@ -415,7 +416,9 @@ body {
     color: #586069;
 }
 
-.services .row.fadeInBottom {
+.services .row.fadeInBottom,
+.portfolioTitle.fadeInBottom,
+.portfolioProjects.fadeInBottom {
     animation: fadeInBottom 1.5s ease 0s 1 normal none;
 }
 

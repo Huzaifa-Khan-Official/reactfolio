@@ -66,7 +66,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handlePortfolioScroll = () => {
-            const portfolioDivHeight = portfolioRef.current.offsetHeight + 1000;
+            const portfolioDivHeight = portfolioRef.current.offsetHeight + servicesRef.current.offsetHeight;
             const isPortfolioScroll = window.scrollY > portfolioDivHeight;
             setPortfolioScroll(isPortfolioScroll);
         };
@@ -140,7 +140,7 @@ export default function Navbar() {
                     <Services scrolled={servicesScroll} />
                 </div>
                 <div id='portfolio' className="portfolio" ref={portfolioRef} style={{ visibility: portfolioScroll && "visible" }}>
-                    <Portfolio scrolled={portfolioScroll}/>
+                    <Portfolio scrolled={portfolioScroll} />
                 </div>
                 <div id='contact' className="section">
                     <h1>Contact</h1>
