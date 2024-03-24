@@ -7,13 +7,22 @@ export default function Portfolio() {
         <div>
             portfolio
 
-            <div className="portfolioProjects d-flex justify-content-center gap-4">
+            <div className="portfolioProjects row justify-content-center gap-5">
                 {
-                    portfolio.map((singleProject) => {
-                        console.log(singleProject.images);
+                    portfolio.map((singleProject, index) => {
                         return (
-                            <div className='singlePortfolio'>
+                            <div className='singlePortfolio col-lg-4 px-3 py-3' key={index}>
                                 <ImageCarousel images={singleProject.images} />
+                                <h3>
+                                    {singleProject.title}
+                                </h3>
+
+                                <p>
+                                    {
+                                        singleProject.description
+                                    }
+                                </p>
+
                             </div>
                         )
                     })

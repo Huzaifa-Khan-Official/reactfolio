@@ -426,6 +426,10 @@ body {
 /* end servicesDiv */
 
 /* portfolio */
+.portfolio {
+    padding: 0 30px;
+}
+
 .thumbs {
     display: none;
 }
@@ -436,7 +440,6 @@ body {
 
 .singlePortfolio .carousel.carousel-slider {
     height: 150px;
-    width: 150px !important;
 }
 
 .singlePortfolio .carousel .slider-wrapper {
