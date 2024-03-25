@@ -495,6 +495,23 @@ body {
     display: none;
 }
 
+.singleProjectBtn {
+    background-color: rgba(13, 180, 199, 0.739);
+    border: 1px solid #0db3c7;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.singleProjectBtn:hover {
+    background-color: #0db3c7;
+}
+
+.singleProjectBtn a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 /* end portfolio */
 
 .section {

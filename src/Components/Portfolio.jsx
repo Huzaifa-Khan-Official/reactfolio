@@ -31,6 +31,14 @@ export default function Portfolio({ scrolled }) {
                                     }
                                 </p>
 
+                                <div className='singleProjectBtnDiv d-flex justify-content-center'>
+                                    <button className='singleProjectBtn'>
+                                        <a href={`${singleProject.link}`} target='_blank'>
+                                            visit website
+                                        </a>
+                                    </button>
+                                </div>
+
                             </div>
                         )
                     })

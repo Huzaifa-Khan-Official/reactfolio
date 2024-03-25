@@ -7,6 +7,16 @@ import banner from '../assets/crm-banner.webp'
 import skills from '../assets/skills.png'
 import homeDivImg from '../assets/homeDivImg.png'
 
+// for project 1
+import project1Img1 from '../assets/Project1/1.png'
+import project1Img2 from '../assets/Project1/2.png'
+import project1Img3 from '../assets/Project1/3.png'
+import project1Img4 from '../assets/Project1/4.png'
+import project1Img5 from '../assets/Project1/5.png'
+import project1Img6 from '../assets/Project1/6.png'
+import project1Img7 from '../assets/Project1/7.png'
+import project1Img8 from '../assets/Project1/8.png'
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // skillsIcons
@@ -84,13 +94,18 @@ const servicesList = [
 const portfolio = [
     {
         images: [
-            banner,
-            skills,
-            homeDivImg
+            project1Img1,
+            project1Img2,
+            project1Img3,
+            project1Img4,
+            project1Img5,
+            project1Img6,
+            project1Img7,
+            project1Img8,
         ],
-        title: "Dummy Website",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
-        link: "https://github.com/Huzaifa-Khan-Official"
+        title: "RestaurantHub",
+        description: "Streamlined restaurant website with easy navigation. Explore restaurants and menus, sign in to securely add items to your cart. Admins enjoy intuitive management, adding restaurants, and CRUD operations on menu items. Elevate your dining experience with RestaurantHub.",
+        link: "https://restauranthub.vercel.app/"
     },
     {
         images: [
@@ -98,8 +113,8 @@ const portfolio = [
             skills,
             homeDivImg
         ],
-        title: "Dummy Website",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
+        title: "Dentist Website",
+        description: "I have created a dentist website using React and Firebase, where users can perform CRUD operations on patient data after logging in. The website also provides daily and monthly data views. Additionally, users can manage pre-received amounts of patients through CRUD operations.",
         link: "https://github.com/Huzaifa-Khan-Official"
     },
     {
