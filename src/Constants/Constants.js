@@ -17,6 +17,15 @@ import project1Img6 from '../assets/Project1/6.png'
 import project1Img7 from '../assets/Project1/7.png'
 import project1Img8 from '../assets/Project1/8.png'
 
+// for project 2
+import project2Img1 from '../assets/Project2/1.png'
+import project2Img2 from '../assets/Project2/2.png'
+import project2Img3 from '../assets/Project2/3.png'
+import project2Img4 from '../assets/Project2/4.png'
+import project2Img5 from '../assets/Project2/5.png'
+import project2Img6 from '../assets/Project2/6.png'
+import project2Img7 from '../assets/Project2/7.png'
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // skillsIcons
@@ -109,9 +118,13 @@ const portfolio = [
     },
     {
         images: [
-            banner,
-            skills,
-            homeDivImg
+            project2Img1,
+            project2Img2,
+            project2Img3,
+            project2Img4,
+            project2Img5,
+            project2Img6,
+            project2Img7,
         ],
         title: "Dentist Website",
         description: "I have created a dentist website using React and Firebase, where users can perform CRUD operations on patient data after logging in. The website also provides daily and monthly data views. Additionally, users can manage pre-received amounts of patients through CRUD operations.",
