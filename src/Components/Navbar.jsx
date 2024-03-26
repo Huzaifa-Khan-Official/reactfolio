@@ -66,7 +66,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handlePortfolioScroll = () => {
-            const portfolioDivHeight = portfolioRef.current.offsetHeight + servicesRef.current.offsetHeight;
+            const portfolioDivHeight = portfolioRef.current.clientHeight;
             const isPortfolioScroll = window.scrollY > portfolioDivHeight;
             setPortfolioScroll(isPortfolioScroll);
         };
