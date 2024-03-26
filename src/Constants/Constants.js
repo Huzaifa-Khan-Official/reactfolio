@@ -3,10 +3,6 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 
-import banner from '../assets/crm-banner.webp'
-import skills from '../assets/skills.png'
-import homeDivImg from '../assets/homeDivImg.png'
-
 // for project 1
 import project1Img1 from '../assets/Project1/1.png'
 import project1Img2 from '../assets/Project1/2.png'
@@ -26,12 +22,18 @@ import project2Img5 from '../assets/Project2/5.png'
 import project2Img6 from '../assets/Project2/6.png'
 import project2Img7 from '../assets/Project2/7.png'
 
-// for project 2
+// for project 3
 import project3Img1 from '../assets/Project3/1.png'
 import project3Img2 from '../assets/Project3/2.png'
 import project3Img3 from '../assets/Project3/3.png'
 import project3Img4 from '../assets/Project3/4.png'
 import project3Img5 from '../assets/Project3/5.png'
+
+// for project 4
+import project4Img1 from '../assets/Project4/1.png'
+import project4Img2 from '../assets/Project4/2.png'
+import project4Img3 from '../assets/Project4/3.png'
+import project4Img4 from '../assets/Project4/4.png'
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
@@ -145,9 +147,20 @@ const portfolio = [
             project3Img4,
             project3Img5,
         ],
-        title: "Bloggin Website",
+        title: "Blogging Website",
         description: "I've built a responsive blog website with JavaScript for seamless data operations using Firebase. Security is a top priority, leveraging Firebase features to protect user data. The focus is on delivering a precise, secure, and user-friendly blogging experience.",
         link: "https://blogging-website-huzaifa.vercel.app/"
+    },
+    {
+        images: [
+            project4Img1,
+            project4Img2,
+            project4Img3,
+            project4Img4,
+        ],
+        title: "Todo Website",
+        description: "I have developed a fully responsive todo website that efficiently stores data for each user, and authentication is implemented using Firebase, ensuring secure access to user accounts. Users can perform CRUD operations on todos within the website, enhancing productivity within the platform.",
+        link: "https://firebase-todo-huzaifa.vercel.app/"
     },
 ]
 

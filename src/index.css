@@ -610,9 +610,9 @@ body {
         margin-top: 50px;
     }
 
-    /* .skillsImg {
-        height: 50%;
-    } */
+    .skillsImg {
+        width: 50%;
+    }
 }
 
 @media (max-width: 540px) {
