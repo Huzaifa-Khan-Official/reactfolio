@@ -512,6 +512,7 @@ body {
     text-decoration: none;
     text-transform: capitalize;
 }
+
 /* end portfolio */
 
 .section {
@@ -599,9 +600,7 @@ body {
     .navbarToggler:hover .toggler {
         color: white;
     }
-}
 
-@media (max-width: 991px) {
     .homeImg {
         display: none;
     }
@@ -610,6 +609,10 @@ body {
     .skillsIconDiv {
         margin-top: 50px;
     }
+
+    /* .skillsImg {
+        height: 50%;
+    } */
 }
 
 @media (max-width: 540px) {
@@ -628,5 +631,9 @@ body {
     .htmlIcon,
     .jsonIcon {
         width: 20px;
+    }
+
+    .carousel-root {
+        height: 300px;
     }
 }

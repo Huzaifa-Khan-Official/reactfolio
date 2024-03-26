@@ -26,6 +26,13 @@ import project2Img5 from '../assets/Project2/5.png'
 import project2Img6 from '../assets/Project2/6.png'
 import project2Img7 from '../assets/Project2/7.png'
 
+// for project 2
+import project3Img1 from '../assets/Project3/1.png'
+import project3Img2 from '../assets/Project3/2.png'
+import project3Img3 from '../assets/Project3/3.png'
+import project3Img4 from '../assets/Project3/4.png'
+import project3Img5 from '../assets/Project3/5.png'
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // skillsIcons
@@ -128,17 +135,19 @@ const portfolio = [
         ],
         title: "Dentist Website",
         description: "I have created a dentist website using React and Firebase, where users can perform CRUD operations on patient data after logging in. The website also provides daily and monthly data views. Additionally, users can manage pre-received amounts of patients through CRUD operations.",
-        link: "https://github.com/Huzaifa-Khan-Official"
+        link: "https://react-dentist-website.vercel.app/"
     },
     {
         images: [
-            banner,
-            skills,
-            homeDivImg
+            project3Img1,
+            project3Img2,
+            project3Img3,
+            project3Img4,
+            project3Img5,
         ],
-        title: "Dummy Website",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis itaque molestiae libero consequatur distinctio quam obcaecati, ut qui similique magni hic ex maiores, ducimus eius veniam, aspernatur veritatis iusto!",
-        link: "https://github.com/Huzaifa-Khan-Official"
+        title: "Bloggin Website",
+        description: "I've built a responsive blog website with JavaScript for seamless data operations using Firebase. Security is a top priority, leveraging Firebase features to protect user data. The focus is on delivering a precise, secure, and user-friendly blogging experience.",
+        link: "https://blogging-website-huzaifa.vercel.app/"
     },
 ]
 
