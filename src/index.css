@@ -552,6 +552,39 @@ body {
     font-size: 50px;
 }
 
+.getInTouchDiv {
+    margin-bottom: 70px;
+}
+
+.inputDiv .form-control {
+    border: 1px solid #ededed;
+    border-radius: 0;
+    box-shadow: none;
+    color: #494949;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+    min-height: 44px;
+    padding-left: 20px;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.inputDiv .form-control:focus {
+    border-color: #0db3c7;
+}
+
+.textArea {
+    height: 142px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.media {
+    margin-top: 20px;
+}
+
 /* end Contact */
 
 @media (max-width: 991px) {
