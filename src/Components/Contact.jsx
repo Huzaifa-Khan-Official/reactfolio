@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="col-lg-7 col-md-12">
+            <div className="col-lg-7 col-md-12 formDiv">
                 <div className="getInTouchDiv">
                     <h6>
                         Contact us
@@ -66,16 +66,16 @@ export default function Contact() {
 
                 <div className="inputDiv">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <input type="text" placeholder='Your Name*' className='form-control'/>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <input type="email" placeholder='Your Email*' className='form-control'/>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <input type="text" placeholder='Subject*' className='form-control'/>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <input type="text" placeholder='Phone*' className='form-control'/>
                         </div>
                     </div>

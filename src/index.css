@@ -668,6 +668,14 @@ body {
     .skillsImg {
         width: 50%;
     }
+
+    .formDiv {
+        margin-top: 50px;
+    }
+
+    .getInTouchDiv {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -676,11 +684,33 @@ body {
     .jsonIcon {
         width: 30px;
     }
+
+    .contact {
+        padding: 80px 30px 50px 30px !important;
+    }
+
+    .mediaBody h4 {
+        font-size: 24px;
+    }
+
+    .getInTouchDiv h2,
+    .portfolioTitleDiv h2,
+    .servicesTitle {
+        font-size: 30px;
+    }
+
+    .servicesTitle {
+        padding-left: 0 !important;
+    }
+
+    .homeDiv .row h2 span {
+        font-size: 20px !important;
+    }
 }
 
 @media (max-width: 320px) {
     .homeDiv .row h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .htmlIcon,
@@ -689,6 +719,17 @@ body {
     }
 
     .carousel-root {
-        height: 300px;
+        height: 200px;
+    }
+
+    .contact {
+        padding: 80px 20px 50px 20px !important;
+    }
+}
+
+@media (max-width: 297px) {
+    .media {
+        flex-direction: column;
+        justify-content: center;
     }
 }

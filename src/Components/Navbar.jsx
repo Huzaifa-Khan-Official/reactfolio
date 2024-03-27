@@ -51,7 +51,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleServicesScroll = () => {
-            const serviceDivHeight = servicesRef.current.offsetHeight - 500;
+            const serviceDivHeight = servicesRef.current.offsetHeight - 900;
             const isServicesScroll = window.scrollY > serviceDivHeight;
             setServicesScroll(isServicesScroll);
         };
@@ -144,7 +144,6 @@ export default function Navbar() {
                     <Portfolio scrolled={portfolioScroll} />
                 </div>
                 <div id='contact' className="contact px-5 pt-5">
-                    {/* <h1>Contact</h1> */}
                     <Contact />
                 </div>
             </div>
