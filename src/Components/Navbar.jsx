@@ -5,6 +5,7 @@ import HomeDiv from './HomeDiv';
 import Skills from './Skills';
 import Services from './Services';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -142,8 +143,9 @@ export default function Navbar() {
                 <div id='portfolio' className="portfolio" ref={portfolioRef} style={{ visibility: portfolioScroll && "visible" }}>
                     <Portfolio scrolled={portfolioScroll} />
                 </div>
-                <div id='contact' className="section">
-                    <h1>Contact</h1>
+                <div id='contact' className="contact px-5 pt-5">
+                    {/* <h1>Contact</h1> */}
+                    <Contact />
                 </div>
             </div>
         </>
