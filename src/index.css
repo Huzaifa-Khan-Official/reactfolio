@@ -545,6 +545,7 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-weight: 600;
+    word-break: break-all;
 }
 
 .mediaIcon {
@@ -601,6 +602,13 @@ body {
 }
 
 /* end Contact */
+
+/* footer */
+.footer {
+    background-color: #0db3c7;
+    padding: 20px 0;
+}
+/* end footer */
 
 @media (max-width: 991px) {
     .navbar {

@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -145,6 +146,10 @@ export default function Navbar() {
                 </div>
                 <div id='contact' className="contact px-5 pt-5 py-5">
                     <Contact />
+                </div>
+
+                <div className="footer">
+                    <Footer />
                 </div>
             </div>
         </>

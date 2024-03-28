@@ -2,6 +2,7 @@ import React from 'react'
 import { LuPhoneCall } from "react-icons/lu";
 import { BsChatLeftText } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
+import { contact } from '../Constants/Constants';
 
 export default function Contact() {
     return (
@@ -23,7 +24,9 @@ export default function Contact() {
                             Call Me Now
                         </h6>
                         <h4>
-                            02934567845
+                            {
+                                contact.number
+                            }
                         </h4>
                     </div>
                 </div>
@@ -35,7 +38,9 @@ export default function Contact() {
                             Contact Me
                         </h6>
                         <h4>
-                            john@gmail.com
+                            {
+                                contact.email
+                            }
                         </h4>
                     </div>
                 </div>
@@ -48,7 +53,9 @@ export default function Contact() {
                             Get Me Here
                         </h6>
                         <h4>
-                            Z105 - London, UK
+                            {
+                                contact.location
+                            }
                         </h4>
                     </div>
                 </div>

@@ -164,4 +164,11 @@ const portfolio = [
     },
 ]
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio }
+// contact
+const contact = {
+    number: "+923492089094",
+    email : "huzaifakhanofficial01@gmail.com",
+    location: "Metroville S.I.T.E. Karachi."
+}
+
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact }
