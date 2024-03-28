@@ -1,4 +1,4 @@
-import { FaBootstrap, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -34,6 +34,9 @@ import project4Img1 from '../assets/Project4/1.png'
 import project4Img2 from '../assets/Project4/2.png'
 import project4Img3 from '../assets/Project4/3.png'
 import project4Img4 from '../assets/Project4/4.png'
+
+// socialIcons
+import { FaFacebookF } from "react-icons/fa";
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
@@ -167,8 +170,24 @@ const portfolio = [
 // contact
 const contact = {
     number: "+923492089094",
-    email : "huzaifakhanofficial01@gmail.com",
+    email: "huzaifakhanofficial01@gmail.com",
     location: "Metroville S.I.T.E. Karachi."
 }
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact }
+// socialLinks
+const socialLinks = [
+    {
+        icon: <FaFacebookF />,
+        link: "https://www.facebook.com/profile.php?id=100090157283290"
+    },
+    {
+        icon: <FaGithub />,
+        link: "https://github.com/Huzaifa-Khan-Official"
+    },
+    {
+        icon: <FaLinkedinIn />,
+        link: "https://www.linkedin.com/in/huzaifa-khan-officia/"
+    }
+]
+
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks }
