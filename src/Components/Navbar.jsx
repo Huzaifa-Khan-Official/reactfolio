@@ -143,7 +143,7 @@ export default function Navbar() {
                 <div id='portfolio' className="portfolio" ref={portfolioRef} style={{ visibility: portfolioScroll && "visible" }}>
                     <Portfolio scrolled={portfolioScroll} />
                 </div>
-                <div id='contact' className="contact px-5 pt-5">
+                <div id='contact' className="contact px-5 pt-5 py-5">
                     <Contact />
                 </div>
             </div>

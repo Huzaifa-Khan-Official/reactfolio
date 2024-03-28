@@ -585,6 +585,21 @@ body {
     margin-top: 20px;
 }
 
+.sendMsgBtn {
+    background-color: rgba(13, 179, 199, 0.7);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 38px 14px 42px;
+    transition: all .3s;
+}
+
+.sendMsgBtn:hover {
+    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, .12);
+    background-color: #0db3c7;
+}
+
 /* end Contact */
 
 @media (max-width: 991px) {

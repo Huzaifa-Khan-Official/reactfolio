@@ -80,6 +80,12 @@ export default function Contact() {
                         </div>
                     </div>
                     <textarea rows="6" className='form-control textArea'></textarea>
+
+                    <div className="sendMsgDiv">
+                        <button className='sendMsgBtn'>
+                            Send Message
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
