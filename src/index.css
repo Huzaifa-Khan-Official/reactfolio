@@ -553,6 +553,22 @@ body {
     font-size: 50px;
 }
 
+.media {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.media:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: all .3s;
+}
+
+.media:hover .mediaIcon {
+    transition: all .3s;
+    color: #0db3c7;
+}
+
 .getInTouchDiv {
     margin-bottom: 70px;
 }
