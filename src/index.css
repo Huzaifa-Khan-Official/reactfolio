@@ -107,7 +107,7 @@ body {
     right: 0;
     top: 0;
     background-repeat: no-repeat;
-    height: 100%;
+    width: 85%;
     animation: fadeInRight 1s ease-in-out;
 }
 

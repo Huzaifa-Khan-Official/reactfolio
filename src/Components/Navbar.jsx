@@ -126,10 +126,17 @@ export default function Navbar() {
                                     <span id="line"></span>
                                 </a>
                             </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#about">
+                                    about
+                                    <span id="line"></span>
+                                </a>
+                            </li>
                         </ul>
+
                     </div>
                 </div>
-            </nav>
+            </nav >
 
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" className="scrollspy-example bg-body-tertiary rounded-2" tabIndex="0">
                 <div id='home' className="homeDiv px-3">
