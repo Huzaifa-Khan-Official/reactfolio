@@ -95,7 +95,7 @@ export default function Navbar() {
                         </span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 nav nav-pills pe-4">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav nav-pills pe-4">
                             <li className="nav-item">
                                 <a className="nav-link" href="#home">
                                     Home
@@ -126,14 +126,7 @@ export default function Navbar() {
                                     <span id="line"></span>
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#about">
-                                    about
-                                    <span id="line"></span>
-                                </a>
-                            </li>
                         </ul>
-
                     </div>
                 </div>
             </nav >

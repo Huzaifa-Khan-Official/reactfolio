@@ -21,6 +21,10 @@ body {
     width: 50px;
 }
 
+.navbar-nav {
+    gap: 60px;
+}
+
 /* nav-link without scroll */
 .nav-link {
     text-transform: uppercase;
