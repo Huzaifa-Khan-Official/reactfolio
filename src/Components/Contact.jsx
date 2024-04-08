@@ -3,8 +3,20 @@ import { LuPhoneCall } from "react-icons/lu";
 import { BsChatLeftText } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { contact } from '../Constants/Constants';
+import { useForm } from 'react-hook-form';
 
 export default function Contact() {
+    const {
+        handleSubmit,
+        register,
+        formState: { errors }
+    } = useForm()
+
+    const onSubmit = (data) => {
+        console.log(data);
+    }
+
+    console.log(errors);
     return (
         <div className='row'>
             <div className="col-lg-5 col-md-12">
@@ -72,29 +84,36 @@ export default function Contact() {
                 </div>
 
                 <div className="inputDiv">
-                    <div className="row">
-                        <div className="col-md-6 col-12">
-                            <input type="text" placeholder='Your Name*' className='form-control'/>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="row">
+                            <div className="col-md-6 col-12">
+                                <input type="text" placeholder='Your Name*' className='form-control' {...register("name", { required: true })} />
+                                <p className="errorPara">
+                                    {
+                                        errors.name && errors.name.message
+                                    }
+                                </p>
+                            </div>
+                            <div className="col-md-6 col-12">
+                                <input type="email" placeholder='Your Email*' className='form-control' />
+                            </div>
+                            <div className="col-md-6 col-12">
+                                <input type="text" placeholder='Subject*' className='form-control' />
+                            </div>
+                            <div className="col-md-6 col-12">
+                                <input type="text" placeholder='Phone*' className='form-control' />
+                            </div>
                         </div>
-                        <div className="col-md-6 col-12">
-                            <input type="email" placeholder='Your Email*' className='form-control'/>
-                        </div>
-                        <div className="col-md-6 col-12">
-                            <input type="text" placeholder='Subject*' className='form-control'/>
-                        </div>
-                        <div className="col-md-6 col-12">
-                            <input type="text" placeholder='Phone*' className='form-control'/>
-                        </div>
-                    </div>
-                    <textarea rows="6" className='form-control textArea'></textarea>
+                        <textarea rows="6" className='form-control textArea'></textarea>
 
-                    <div className="sendMsgDiv">
-                        <button className='sendMsgBtn'>
-                            Send Message
-                        </button>
-                    </div>
+                        <div className="sendMsgDiv">
+                            <button className='sendMsgBtn'>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
