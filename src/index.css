@@ -585,15 +585,19 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     min-height: 44px;
     padding-left: 20px;
-    text-transform: capitalize;
     transition: all .3s;
 }
 
 .inputDiv .form-control:focus {
     border-color: #0db3c7;
+}
+
+.inputDiv .errorPara {
+    color: red;
+    font-size: 14px;
 }
 
 .textArea {
@@ -619,6 +623,11 @@ body {
 .sendMsgBtn:hover {
     box-shadow: 0 16px 30px 0 rgba(0, 0, 0, .12);
     background-color: #0db3c7;
+}
+
+.spinner-border {
+    height: 20px;
+    width: 20px;
 }
 
 /* end Contact */

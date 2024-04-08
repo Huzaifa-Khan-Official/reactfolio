@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LuPhoneCall } from "react-icons/lu";
 import { BsChatLeftText } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { contact } from '../Constants/Constants';
 import { useForm } from 'react-hook-form';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../Configuration/Configuration';
+import moment from 'moment';
+import { toast } from 'react-toastify';
 
 export default function Contact() {
+    const [isLoading, setIsLoading] = useState(false);
     const {
         handleSubmit,
         register,
         formState: { errors }
     } = useForm()
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (data) => {
+        try {
+            setIsLoading(true)
+            data.time = moment().format("Do MMMM YYYY");
+            await addDoc(collection(db, "data"), data);
+            setIsLoading(false)
+            toast.success("Message submit successfully!")
+        } catch (e) {
+            setIsLoading(false)
+            toast.error("Something went wrong. Please try later!")
+        }
     }
 
-    console.log(errors);
     return (
         <div className='row'>
             <div className="col-lg-5 col-md-12">
@@ -87,7 +100,12 @@ export default function Contact() {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="row">
                             <div className="col-md-6 col-12">
-                                <input type="text" placeholder='Your Name*' className='form-control' {...register("name", { required: true })} />
+                                <input type="text" placeholder='Your Name*' className='form-control' {...register("name", {
+                                    required: {
+                                        value: true,
+                                        message: "Please enter your name."
+                                    }
+                                })} />
                                 <p className="errorPara">
                                     {
                                         errors.name && errors.name.message
@@ -95,25 +113,89 @@ export default function Contact() {
                                 </p>
                             </div>
                             <div className="col-md-6 col-12">
-                                <input type="email" placeholder='Your Email*' className='form-control' />
+                                <input type="email" placeholder='Your Email*' className='form-control'
+                                    {
+                                    ...register("email",
+                                        {
+                                            required: {
+                                                value: true,
+                                                message: "Please enter your emial."
+                                            }
+                                        }
+                                    )
+                                    }
+                                />
+                                <p className="errorPara">
+                                    {
+                                        errors.email && errors.email.message
+                                    }
+                                </p>
                             </div>
                             <div className="col-md-6 col-12">
-                                <input type="text" placeholder='Subject*' className='form-control' />
+                                <input type="text" placeholder='Subject*' className='form-control'
+                                    {
+                                    ...register("subject", {
+                                        required: {
+                                            value: true,
+                                            message: "Please enter subject."
+                                        }
+                                    })
+                                    }
+                                />
+                                <p className="errorPara">
+                                    {
+                                        errors.subject && errors.subject.message
+                                    }
+                                </p>
                             </div>
                             <div className="col-md-6 col-12">
-                                <input type="text" placeholder='Phone*' className='form-control' />
+                                <input type="text" placeholder='Phone*' className='form-control'
+                                    {
+                                    ...register("phone", {
+                                        required: {
+                                            value: true,
+                                            message: "Please enter subject."
+                                        }
+                                    })
+                                    }
+                                />
+                                <p className="errorPara">
+                                    {
+                                        errors.phone && errors.phone.message
+                                    }
+                                </p>
                             </div>
                         </div>
-                        <textarea rows="6" className='form-control textArea'></textarea>
+                        <textarea rows="6" className='form-control textArea' placeholder='Write your message here...'
+                            {
+                            ...register("message", {
+                                required: {
+                                    value: true,
+                                    message: "Please enter subject."
+                                }
+                            })
+                            }
+                        ></textarea>
+                        <p className="errorPara">
+                            {
+                                errors.message && errors.message.message
+                            }
+                        </p>
 
                         <div className="sendMsgDiv">
                             <button className='sendMsgBtn'>
-                                Send Message
+                                {
+                                    isLoading ? (
+                                        <div className="spinner-border" role="status">
+                                            <span className="visually-hidden">Loading...</span>
+                                        </div>
+                                    ) : "Send Message"
+                                }
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>
+            </div >
         </div >
     )
 }
