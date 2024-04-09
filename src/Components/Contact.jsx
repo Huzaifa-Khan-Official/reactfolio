@@ -119,7 +119,7 @@ export default function Contact() {
                                         {
                                             required: {
                                                 value: true,
-                                                message: "Please enter your emial."
+                                                message: "Please enter your email."
                                             }
                                         }
                                     )
@@ -154,7 +154,7 @@ export default function Contact() {
                                     ...register("phone", {
                                         required: {
                                             value: true,
-                                            message: "Please enter subject."
+                                            message: "Please enter contact number."
                                         }
                                     })
                                     }
@@ -171,7 +171,7 @@ export default function Contact() {
                             ...register("message", {
                                 required: {
                                     value: true,
-                                    message: "Please enter subject."
+                                    message: "Please enter a message."
                                 }
                             })
                             }

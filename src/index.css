@@ -101,6 +101,26 @@ body {
 
 /* end navbar */
 /* homeDiv */
+.topBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    padding: 15px;
+    padding-top: 10px;
+    background-color: rgba(13, 180, 199, 0.7);
+    border: 1px solid #0db3c7;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+    transition: all .3s;
+}
+
+.topBtn:hover {
+    background-color: #0db3c7;
+}
+
 .homeDiv {
     position: relative;
     padding-top: 80px;
@@ -150,19 +170,23 @@ body {
 }
 
 .btnDiv .btn {
-    color: #fff;
     margin-top: 20px;
     background: #0db4c7d6;
     border: 2px solid #0db3c7;
     border-radius: 3px;
     cursor: pointer;
-    font-family: sans-serif;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 500;
     min-width: 140px;
     padding: 10px 36px;
     transition: all .3s linear;
+}
+
+.btnDiv a {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .btnDiv .btn:hover {
@@ -564,7 +588,6 @@ body {
 
 .media:hover {
     cursor: pointer;
-    background-color: white;
     transition: all .3s;
 }
 

@@ -42,7 +42,9 @@ export default function HomeDiv() {
 
                     <div className="btnDiv">
                         <button className='btn'>
-                            contact me
+                            <a href="#contact">
+                                contact me
+                            </a>
                         </button>
                     </div>
                 </div>

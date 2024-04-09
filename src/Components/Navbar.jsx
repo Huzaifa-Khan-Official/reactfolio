@@ -1,6 +1,6 @@
 import navbarLogo from '../assets/navbarLogo.png'
 import { useEffect, useRef, useState } from 'react';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaHandPointUp } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
 import Services from './Services';
@@ -151,6 +151,10 @@ export default function Navbar() {
                 <div className="footer">
                     <Footer />
                 </div>
+
+                <a href="#home" className="topBtn" style={{ visibility: scrolled ? "visible" : "hidden" }}>
+                    <FaHandPointUp />
+                </a>
             </div>
         </>
     )
