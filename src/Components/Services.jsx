@@ -1,5 +1,7 @@
 import { BsJournalBookmarkFill } from "react-icons/bs";
 import { servicesList } from "../Constants/Constants";
+import { motion } from "framer-motion"
+
 
 export default function Services({ scrolled }) {
     return (
@@ -11,7 +13,14 @@ export default function Services({ scrolled }) {
                 {
                     servicesList.map((singleService, index) => {
                         return (
-                            <div className="cardDiv col-lg-3 col-md-4 col-12" key={index}>
+                            <motion.div
+                                className="cardDiv col-lg-3 col-md-4 col-12"
+                                key={index}
+                                initial={{ opacity: 0, y: 75 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
                                 <div className="d-flex flex-column gap-3 ">
                                     <div className="serviceHeadingDiv d-flex align-items-center gap-2">
                                         <div className="iconDiv">
@@ -27,7 +36,7 @@ export default function Services({ scrolled }) {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         )
                     })
                 }

@@ -8,6 +8,8 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 
+import { motion } from "framer-motion"
+
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [isSkills, setIsSkills] = useState(false);
@@ -50,20 +52,20 @@ export default function Navbar() {
     }, []);
 
 
-    useEffect(() => {
-        const handleServicesScroll = () => {
-            const serviceDivHeight = servicesRef.current.offsetHeight - 900;
-            const isServicesScroll = window.scrollY > serviceDivHeight;
-            setServicesScroll(isServicesScroll);
-        };
+    // useEffect(() => {
+    //     const handleServicesScroll = () => {
+    //         const serviceDivHeight = servicesRef.current.offsetHeight - 900;
+    //         const isServicesScroll = window.scrollY > serviceDivHeight;
+    //         setServicesScroll(isServicesScroll);
+    //     };
 
-        window.addEventListener('scroll', handleServicesScroll);
+    //     window.addEventListener('scroll', handleServicesScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleServicesScroll);
-        };
+    //     return () => {
+    //         window.removeEventListener('scroll', handleServicesScroll);
+    //     };
 
-    }, []);
+    // }, []);
 
 
     useEffect(() => {
@@ -110,7 +112,7 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#service">
-                                    service
+                                    services
                                     <span id="line"></span>
                                 </a>
                             </li>
@@ -138,10 +140,22 @@ export default function Navbar() {
                 <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef} style={{ visibility: isSkills && "visible" }}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="services px-3 my-5" ref={servicesRef} style={{ visibility: servicesScroll && "visible" }}>
-                    <Services scrolled={servicesScroll} />
+                <div id='service' className="services px-3 my-5" ref={servicesRef}
+                    // style={{ visibility: servicesScroll && "visible" }}
+                    style={{ visibility: "visible" }}
+                >
+                    <motion.div
+                        initial={{ opacity: 0, y: 75 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
+                        <Services scrolled={servicesScroll} />
+                    </motion.div>
                 </div>
-                <div id='portfolio' className="portfolio" ref={portfolioRef} style={{ visibility: portfolioScroll && "visible" }}>
+                <div id='portfolio' className="portfolio" ref={portfolioRef}
+                    style={{ visibility: portfolioScroll && "visible" }}
+                >
                     <Portfolio scrolled={portfolioScroll} />
                 </div>
                 <div id='contact' className="contact px-5 pt-5 py-5">
