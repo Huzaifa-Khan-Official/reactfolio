@@ -1,25 +1,38 @@
 import React from 'react'
 import ImageCarousel from './ImageCarousel'
 import { portfolio } from '../Constants/Constants'
+import { motion } from 'framer-motion'
 
-export default function Portfolio({ scrolled }) {
+export default function Portfolio() {
     return (
         <div>
-
-            <div className="portfolioTitleDiv text-center mb-5">
-                <h5 className={`portfolioTitle ${scrolled && "fadeInBottom"}`}>
+            <motion.div
+                className="portfolioTitleDiv text-center mb-5"
+                initial={{ opacity: 0, y: 75 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
+                <h5 className="portfolioTitle">
                     portfolio
                 </h5>
-                <h2 className={`portfolioTitle ${scrolled && "fadeInBottom"}`}>
+                <h2 className="portfolioTitle">
                     Some of my latest works.
                 </h2>
-            </div>
+            </motion.div>
 
-            <div className={`portfolioProjects row justify-content-center gap-5 ${scrolled && "fadeInBottom"}`}>
+            <div className="portfolioProjects row justify-content-center gap-5">
                 {
                     portfolio.map((singleProject, index) => {
                         return (
-                            <div className='singlePortfolio col-lg-4 col-md-4 col-12' key={index}>
+                            <motion.div
+                                className='singlePortfolio col-lg-4 col-md-4 col-12'
+                                key={index}
+                                initial={{ opacity: 0, y: 75 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
                                 <ImageCarousel images={singleProject.images} />
                                 <h3 className='mt-2 pt-3'>
                                     {singleProject.title}
@@ -39,7 +52,7 @@ export default function Portfolio({ scrolled }) {
                                     </button>
                                 </div>
 
-                            </div>
+                            </motion.div>
                         )
                     })
                 }

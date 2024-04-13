@@ -13,11 +13,7 @@ import { motion } from "framer-motion"
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [isSkills, setIsSkills] = useState(false);
-    const [servicesScroll, setServicesScroll] = useState(false);
-    const [portfolioScroll, setPortfolioScroll] = useState(false);
     const skillsRef = useRef(null);
-    const servicesRef = useRef(null);
-    const portfolioRef = useRef(null);
 
 
     useEffect(() => {
@@ -50,23 +46,6 @@ export default function Navbar() {
         };
 
     }, []);
-
-
-    useEffect(() => {
-        const handlePortfolioScroll = () => {
-            const portfolioDivHeight = portfolioRef.current.clientHeight;
-            const isPortfolioScroll = window.scrollY > portfolioDivHeight;
-            setPortfolioScroll(isPortfolioScroll);
-        };
-
-        window.addEventListener('scroll', handlePortfolioScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handlePortfolioScroll);
-        };
-
-    }, []);
-
 
     return (
         <>
@@ -124,8 +103,7 @@ export default function Navbar() {
                 <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef} style={{ visibility: isSkills && "visible" }}>
                     <Skills scrolled={isSkills} />
                 </div>
-                <div id='service' className="services px-3 my-5" ref={servicesRef}
-                >
+                <div id='service' className="services px-3 my-5">
                     <motion.div
                         initial={{ opacity: 0, y: 75 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -135,10 +113,8 @@ export default function Navbar() {
                         <Services />
                     </motion.div>
                 </div>
-                <div id='portfolio' className="portfolio" ref={portfolioRef}
-                    style={{ visibility: portfolioScroll && "visible" }}
-                >
-                    <Portfolio scrolled={portfolioScroll} />
+                <div id='portfolio' className="portfolio" >                    
+                    <Portfolio />
                 </div>
                 <div id='contact' className="contact px-5 pt-5 py-5">
                     <Contact />
