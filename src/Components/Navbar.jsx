@@ -28,22 +28,6 @@ export default function Navbar() {
         };
     }, [scrolled]);
 
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const skillsDivHeight = skillsRef.current.offsetHeight - 500;
-    //         const isSkillscrolled = window.scrollY > skillsDivHeight;
-    //         setIsSkills(isSkillscrolled);
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-
-    // }, []);
-
     return (
         <>
             <nav className={`navbar navbar-expand-lg sticky-top ${scrolled && 'bg-scroll'}`}>

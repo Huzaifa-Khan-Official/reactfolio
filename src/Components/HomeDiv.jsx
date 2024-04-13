@@ -4,11 +4,20 @@ import homeDivImg from '../assets/homeDivImg.png'
 import htmlIcon from '../assets/htmlIcon.png'
 import jsonIcon from '../assets/jsonIcon.png'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from 'framer-motion'
 
 export default function HomeDiv() {
     return (
         <>
-            <img src={bannerImg2} alt="" className='homeImg' />
+            <motion.img
+                src={bannerImg2}
+                alt=""
+                className='homeImg'
+                initial={{ opacity: 0, x: 75 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            />
             <div className="row px-4 py-5">
                 <div className="col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center align-items-center">
                     <div className="bubble2"></div>
@@ -16,7 +25,12 @@ export default function HomeDiv() {
                     <div className="bubble3"></div>
                     <div className="bubble4"></div>
                     <div className="bubble5"></div>
-                    <h2>
+                    <motion.h2
+                        initial={{ opacity: 0, x: -75 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
                         Hey there!
                         <br />
                         I'm Huzaifa Khan
@@ -34,26 +48,43 @@ export default function HomeDiv() {
                                 repeat={Infinity}
                             />
                         </span>
-                    </h2>
+                    </motion.h2>
 
-                    <h4>
+                    <motion.h4
+                        initial={{ opacity: 0, x: -75 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
                         I create eye catching website
-                    </h4>
+                    </motion.h4>
 
-                    <div className="btnDiv">
+                    <motion.div
+                        className="btnDiv"
+                        initial={{ opacity: 0, x: -75 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
                         <button className='btn'>
                             <a href="#contact">
                                 contact me
                             </a>
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
 
-                <div className='col-lg-6 col-md-12 col-12 homeImgDiv d-flex justify-content-center align-items-center'>
+                <motion.div
+                    className='col-lg-6 col-md-12 col-12 homeImgDiv d-flex justify-content-center align-items-center'
+                    initial={{ opacity: 0, x: 75 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.5 }}
+                >
                     <img src={homeDivImg} alt="" className='homeDivImg' />
                     <img src={htmlIcon} alt="" className='htmlIcon' />
                     <img src={jsonIcon} alt="" className='jsonIcon' />
-                </div>
+                </motion.div>
             </div>
         </>
     )
