@@ -328,6 +328,8 @@ body {
 
 .skillsDiv {
     padding-bottom: 70px !important;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .skillsHeading {
@@ -541,7 +543,12 @@ body {
 
 /* end portfolio */
 
-/* contact */
+/* contact */ 
+.contact {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .getInTouchDiv h6 {
     color: #0db3c7;
     font-size: 14px;

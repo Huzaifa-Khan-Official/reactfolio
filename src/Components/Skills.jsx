@@ -1,48 +1,86 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import skillsImg from '../assets/skillsImg.svg'
 import skillsListIcon from '../assets/skillsListIcon.png'
 import { skillsList, skillsIcons, skillsSubTitle } from '../Constants/Constants'
+import { motion } from 'framer-motion'
 
-export default function Skills({ scrolled }) {
+export default function Skills() {
     return (
         <div className='row px-2 py-5 pb-1'>
-            <div className='col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center align-items-center'>
-                <img src={skillsImg} alt="" className={`skillsImg ${scrolled && "fadeInLeft"}`} />
-            </div>
+            <motion.div
+                className='col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center align-items-center'
+
+                initial={{ opacity: 0, x: -75 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
+                <img
+                    src={skillsImg}
+                    alt=""
+                    className="skillsImg"
+                />
+            </motion.div>
             <div className="col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center">
                 <div className='d-flex flex-column justify-content-center align-items-center skillsIconDiv'>
 
-                    <h3 className={`skillsHeading ${scrolled && "fadeInRight"}`}>
+                    <motion.h3
+                        className="skillsHeading"
+                        initial={{ opacity: 0, x: 75 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
                         Skills
-                    </h3>
-                    <p className={`skillsSubTitle ${scrolled && "fadeInRight"}`}>
+                    </motion.h3>
+                    <motion.p
+                        className="skillsSubTitle"
+                        initial={{ opacity: 0, x: 75 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    >
                         {skillsSubTitle}
-                    </p>
+                    </motion.p>
 
-                    <div className={`skillIconsDiv ${scrolled && "fadeInRight"}`}>
+                    <div className="skillIconsDiv">
                         <ul className='iconsList d-flex gap-4 align-items-center justify-content-center flex-wrap'>
                             {
                                 skillsIcons.map((v, i) => {
                                     return (
-                                        <li className='singleIcon d-flex justify-content-center align-items-center flex-column' key={i}>
+                                        <motion.li
+                                            className='singleIcon d-flex justify-content-center align-items-center flex-column'
+                                            key={i}
+                                            initial={{ opacity: 0, x: 75 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 1 }}
+                                        >
                                             <span className='skillsIcon'>
                                                 {v.icon}
                                             </span>
                                             <p className='skillsIconTitle'>
                                                 {v.title}
                                             </p>
-                                        </li>
+                                        </motion.li>
                                     )
                                 })
                             }
                         </ul>
                     </div>
 
-                    <div className={`skillsListDiv ${scrolled && "fadeInRight"}`}>
+                    <div className="skillsListDiv">
                         {
                             skillsList.map((v, i) => {
                                 return (
-                                    <div key={i} className='d-flex'>
+                                    <motion.div
+                                        key={i}
+                                        className='d-flex'
+                                        initial={{ opacity: 0, x: 75 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 1 }}
+                                    >
 
                                         <div className="listImageDiv">
                                             <img src={skillsListIcon} className='skillsListIcon' alt="" />
@@ -50,15 +88,15 @@ export default function Skills({ scrolled }) {
                                         <p className="listContentDiv">
                                             {v}
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 )
                             })
                         }
                     </div>
 
-                </div>
+                </div >
 
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }

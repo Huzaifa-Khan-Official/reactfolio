@@ -1,5 +1,5 @@
 import navbarLogo from '../assets/navbarLogo.png'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect,useState } from 'react';
 import { FaBars, FaHandPointUp } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
@@ -12,9 +12,6 @@ import { motion } from "framer-motion"
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-    const [isSkills, setIsSkills] = useState(false);
-    const skillsRef = useRef(null);
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,26 +29,26 @@ export default function Navbar() {
     }, [scrolled]);
 
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const skillsDivHeight = skillsRef.current.offsetHeight - 500;
-            const isSkillscrolled = window.scrollY > skillsDivHeight;
-            setIsSkills(isSkillscrolled);
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const skillsDivHeight = skillsRef.current.offsetHeight - 500;
+    //         const isSkillscrolled = window.scrollY > skillsDivHeight;
+    //         setIsSkills(isSkillscrolled);
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
 
-    }, []);
+    // }, []);
 
     return (
         <>
             <nav className={`navbar navbar-expand-lg sticky-top ${scrolled && 'bg-scroll'}`}>
                 <div className="container-fluid px-5">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/">
                         <img src={navbarLogo} alt="" />
                     </a>
                     <button className="navbarToggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,8 +97,8 @@ export default function Navbar() {
                 <div id='home' className="homeDiv px-3">
                     <HomeDiv />
                 </div>
-                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4" ref={skillsRef} style={{ visibility: isSkills && "visible" }}>
-                    <Skills scrolled={isSkills} />
+                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4">
+                    <Skills />
                 </div>
                 <div id='service' className="services px-3 my-5">
                     <motion.div
@@ -113,7 +110,7 @@ export default function Navbar() {
                         <Services />
                     </motion.div>
                 </div>
-                <div id='portfolio' className="portfolio" >                    
+                <div id='portfolio' className="portfolio" >
                     <Portfolio />
                 </div>
                 <div id='contact' className="contact px-5 pt-5 py-5">

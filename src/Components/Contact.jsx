@@ -8,6 +8,7 @@ import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../Configuration/Configuration';
 import moment from 'moment';
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion'
 
 export default function Contact() {
     const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,13 @@ export default function Contact() {
 
     return (
         <div className='row'>
-            <div className="col-lg-5 col-md-12">
+            <motion.div
+                className="col-lg-5 col-md-12"
+                initial={{ opacity: 0, x: -75 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
                 <div className="getInTouchDiv">
                     <h6>
                         Get in Touch
@@ -84,19 +91,31 @@ export default function Contact() {
                         </h4>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             <div className="col-lg-7 col-md-12 formDiv">
-                <div className="getInTouchDiv">
+                <motion.div
+                    className="getInTouchDiv"
+                    initial={{ opacity: 0, x: 75 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                >
                     <h6>
                         Contact us
                     </h6>
                     <h2>
                         Let me know here Know Here
                     </h2>
-                </div>
+                </motion.div>
 
-                <div className="inputDiv">
+                <motion.div
+                    className="inputDiv"
+                    initial={{ opacity: 0, x: 75 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                >
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="row">
                             <div className="col-md-6 col-12">
@@ -194,7 +213,7 @@ export default function Contact() {
                             </button>
                         </div>
                     </form>
-                </div>
+                </motion.div>
             </div >
         </div >
     )
