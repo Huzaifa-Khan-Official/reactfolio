@@ -105,7 +105,7 @@ export default function Contact() {
                         Contact us
                     </h6>
                     <h2>
-                        Let me know here Know Here
+                        Let me know here
                     </h2>
                 </motion.div>
 
