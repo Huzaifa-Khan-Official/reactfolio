@@ -5,6 +5,7 @@ import htmlIcon from '../assets/htmlIcon.png'
 import jsonIcon from '../assets/jsonIcon.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
+import { name } from '../Constants/Constants'
 
 export default function HomeDiv() {
     return (
@@ -33,7 +34,7 @@ export default function HomeDiv() {
                     >
                         Hey there!
                         <br />
-                        I'm Huzaifa Khan
+                        I'm {name}
                         <br />
                         <span>
                             <TypeAnimation

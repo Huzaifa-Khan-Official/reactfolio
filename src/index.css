@@ -9,6 +9,47 @@ body {
     background-color: #fafafa;
 }
 
+.startLoader {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    background-color: #079bab;
+    color: white;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.startLoader h1 {
+    font-size: xx-large;
+    word-break: break-word;
+}
+
+.loader {
+    height: 200px;
+    aspect-ratio: 1;
+    display: grid;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    --c:no-repeat linear-gradient(#fff 0 0);
+    background: var(--c), var(--c);
+    background-size: 25% 50%;
+    animation: l5 1.5s infinite linear;
+  }
+  .loader:after {
+    transform: scale(-1);
+  }
+  @keyframes l5 {
+    0%,
+    5%   {background-position:33.4% 100%,66.6% 100%}
+    25%  {background-position:33.4% 100%,100% 0}
+    50%  {background-position:0 0,100% 0}
+    75%  {background-position:0 0,66.6% 100%}
+    95%,
+    100% {background-position:33.4% 100%,66.6% 100%}
+  } 
+
 /* navbar */
 .navbar {
     position: fixed;
@@ -399,12 +440,6 @@ body {
 .serviceDesc {
     color: #586069;
 }
-
-/* .services .row.fadeInBottom,
-.portfolioTitle.fadeInBottom,
-.portfolioProjects.fadeInBottom {
-    animation: fadeInBottom 1.5s ease 0s 1 normal none;
-} */
 
 .cardDiv {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -807,6 +842,10 @@ body {
     .homeDiv .row h2 span {
         font-size: 20px !important;
     }
+
+    .startLoader h1 {
+        font-size: xx-large;
+    }
 }
 
 @media (max-width: 320px) {
@@ -826,6 +865,14 @@ body {
     .contact {
         padding: 80px 20px 50px 20px !important;
     }
+
+    .loader {
+        height: 70vw;
+    }
+
+    /* .startLoader h1 {
+        font-size: 42px;
+    } */
 }
 
 @media (max-width: 297px) {

@@ -40,6 +40,9 @@ import { FaFacebookF } from "react-icons/fa";
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
+// name
+const name = "Huzaifa Khan";
+
 // skillsIcons
 const skillsIcons = [
     {
@@ -190,4 +193,4 @@ const socialLinks = [
     }
 ]
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name }

@@ -1,5 +1,5 @@
 import navbarLogo from '../assets/navbarLogo.png'
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaHandPointUp } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
