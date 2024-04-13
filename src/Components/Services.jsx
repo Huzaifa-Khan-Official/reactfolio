@@ -3,13 +3,14 @@ import { servicesList } from "../Constants/Constants";
 import { motion } from "framer-motion"
 
 
-export default function Services({ scrolled }) {
+export default function Services() {
     return (
         <>
-            <h2 className={`servicesTitle text-center ps-5 ${scrolled && "fadeInLeft"}`}>
+            <h2
+                className="servicesTitle text-center ps-5">
                 What I do ?
             </h2>
-            <div className={`row px-3 justify-content-center gap-4 my-4 ${scrolled && "fadeInBottom"}`}>
+            <div className="row px-3 justify-content-center gap-4 my-4">
                 {
                     servicesList.map((singleService, index) => {
                         return (

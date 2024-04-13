@@ -52,22 +52,6 @@ export default function Navbar() {
     }, []);
 
 
-    // useEffect(() => {
-    //     const handleServicesScroll = () => {
-    //         const serviceDivHeight = servicesRef.current.offsetHeight - 900;
-    //         const isServicesScroll = window.scrollY > serviceDivHeight;
-    //         setServicesScroll(isServicesScroll);
-    //     };
-
-    //     window.addEventListener('scroll', handleServicesScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleServicesScroll);
-    //     };
-
-    // }, []);
-
-
     useEffect(() => {
         const handlePortfolioScroll = () => {
             const portfolioDivHeight = portfolioRef.current.clientHeight;
@@ -141,8 +125,6 @@ export default function Navbar() {
                     <Skills scrolled={isSkills} />
                 </div>
                 <div id='service' className="services px-3 my-5" ref={servicesRef}
-                    // style={{ visibility: servicesScroll && "visible" }}
-                    style={{ visibility: "visible" }}
                 >
                     <motion.div
                         initial={{ opacity: 0, y: 75 }}
@@ -150,7 +132,7 @@ export default function Navbar() {
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
                     >
-                        <Services scrolled={servicesScroll} />
+                        <Services />
                     </motion.div>
                 </div>
                 <div id='portfolio' className="portfolio" ref={portfolioRef}
