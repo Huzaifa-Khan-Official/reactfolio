@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Theme.Provider value={{ darkTheme, setDarkTheme }}>
-      <div className={`App ${darkTheme && "darkTheme"}`} data-bs-theme={`${darkTheme && "dark"}`}>
+      <div className={`App ${darkTheme && "darkTheme"}`}>
         {
           startLoader ? <StartLoader /> :
             (

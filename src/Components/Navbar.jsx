@@ -74,7 +74,7 @@ export default function Navbar() {
                                     <span id="line"></span>
                                 </a>
                             </li>
-                            <li className="nav-item d-flex align-items-center justify-content-center">
+                            <li className="nav-item d-flex align-items-center">
                                 <button className={`themeBtn ${darkTheme && "darkTheme"}`} onClick={() => setDarkTheme(!darkTheme)}>
                                     <img src={themes.lightModeImg} style={{ visibility: !darkTheme ? "visible" : "hidden" }} alt="☀️" />
                                     <img src={themes.nightModeImg} style={{ visibility: darkTheme ? "visible" : "hidden" }} alt="🌜" />
