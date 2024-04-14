@@ -32,7 +32,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg sticky-top ${scrolled && 'bg-scroll'}`}>
+            <nav className={`navbar navbar-expand-lg sticky-top ${scrolled && 'bg-scroll'} ${darkTheme && "darkTheme"}`}>
                 <div className="container-fluid px-5">
                     <a className="navbar-brand" href="/">
                         <img src={navbarLogo} alt="" />
@@ -86,7 +86,7 @@ export default function Navbar() {
             </nav >
 
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" className="scrollspy-example bg-body-tertiary rounded-2" tabIndex="0">
-                <div id='home' className="homeDiv px-3">
+                <div id='home' className={`homeDiv ${darkTheme && "darkTheme"} px-3`}>
                     <HomeDiv />
                 </div>
                 <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4">
