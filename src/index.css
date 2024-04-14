@@ -495,7 +495,7 @@ body {
 .cardDiv:hover {
     cursor: pointer;
     font-size: 16px;
-    transform: scale(1.04);
+    transform: scale(1.04) !important;
 }
 
 /* end servicesDiv */
@@ -781,16 +781,33 @@ body {
 }
 
 .themeBtn.darkTheme,
-.bg-scroll.darkTheme {
+.bg-scroll.darkTheme,
+.darkTheme .skillsDiv,
+.darkTheme .services {
     background-color: #2b3035;
 }
 
-.bg-scroll.darkTheme .nav-link {
+.darkTheme .services,
+.darkTheme .skillsDiv {
+    border-top: 1px solid hsla(0, 0%, 83%, .397);
+}
+
+.bg-scroll.darkTheme .nav-link,
+.darkTheme .skillsHeading,
+.darkTheme .skillsSubTitle,
+.darkTheme .skillsIcon,
+.darkTheme .skillsIconTitle,
+.darkTheme .listContentDiv,
+.darkTheme .sevicesIcon,
+.darkTheme .serviceHeading h4,
+.darkTheme .serviceDesc,
+.darkTheme .homeDiv .row {
     color: #fff;
 }
 
-.darkTheme .homeDiv .row {
-    color: white;
+.darkTheme .cardDiv {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 16px, rgba(255, 255, 255, 0.1) 0px 8px 32px;
+    border: 1px solid hsla(0, 0%, 83%, .397);
 }
 
 /* end darkTheme settings */

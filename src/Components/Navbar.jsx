@@ -92,7 +92,7 @@ export default function Navbar() {
                 <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4">
                     <Skills />
                 </div>
-                <div id='service' className="services px-3 my-5">
+                <div id='service' className="services px-3 py-5">
                     <motion.div
                         initial={{ opacity: 0, y: 75 }}
                         whileInView={{ opacity: 1, y: 0 }}
