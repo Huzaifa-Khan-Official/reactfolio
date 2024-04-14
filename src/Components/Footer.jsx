@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { socialLinks } from '../Constants/Constants'
+import { Theme } from '../Context/Context';
 
 export default function Footer() {
+    // const { darkTheme, setDarkTheme } = useContext(Theme);
+
+    // console.log(darkTheme);
     return (
         <div className='container'>
             <div className="row">

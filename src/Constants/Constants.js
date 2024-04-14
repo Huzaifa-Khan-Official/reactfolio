@@ -38,6 +38,10 @@ import project4Img4 from '../assets/Project4/4.png'
 // socialIcons
 import { FaFacebookF } from "react-icons/fa";
 
+// lightModeImg
+import lightModeImg from '../assets/lightModeImg.png'
+import nightModeImg from '../assets/nightModeImg.png'
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // name
@@ -193,4 +197,9 @@ const socialLinks = [
     }
 ]
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name }
+const themes = {
+    lightModeImg,
+    nightModeImg
+}
+
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes }

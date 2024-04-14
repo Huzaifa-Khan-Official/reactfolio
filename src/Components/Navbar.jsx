@@ -1,5 +1,5 @@
 import navbarLogo from '../assets/navbarLogo.png'
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { FaBars, FaHandPointUp } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
 import Skills from './Skills';
@@ -7,11 +7,13 @@ import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
-
 import { motion } from "framer-motion"
+import { Theme } from '../Context/Context';
+import { themes } from '../Constants/Constants';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const { darkTheme, setDarkTheme } = useContext(Theme);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -71,6 +73,12 @@ export default function Navbar() {
                                     contact
                                     <span id="line"></span>
                                 </a>
+                            </li>
+                            <li className="nav-item d-flex align-items-center justify-content-center">
+                                <button className={`themeBtn ${darkTheme && "darkTheme"}`} onClick={() => setDarkTheme(!darkTheme)}>
+                                    <img src={themes.lightModeImg} style={{ visibility: !darkTheme ? "visible" : "hidden" }} alt="☀️" />
+                                    <img src={themes.nightModeImg} style={{ visibility: darkTheme ? "visible" : "hidden" }} alt="🌜" />
+                                </button>
                             </li>
                         </ul>
                     </div>

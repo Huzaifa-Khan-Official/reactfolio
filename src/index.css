@@ -71,6 +71,30 @@ body {
 
 /* end startLoader */
 
+/* themeBtn */
+.themeBtn {
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(218, 215, 215, 0.903);
+    display: flex;
+    gap: 5px;
+}
+
+.themeBtn.darkTheme {
+    background-color: #0db3c7;
+}
+
+.themeBtn img {
+    width: 28px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* .themeBtn img */
+
+/* end themeBtn */
+
 /* navbar */
 .navbar {
     position: fixed;
@@ -84,7 +108,7 @@ body {
 }
 
 .navbar-nav {
-    gap: 60px;
+    gap: 40px;
 }
 
 /* nav-link without scroll */
