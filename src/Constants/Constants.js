@@ -47,7 +47,6 @@ import schoolLogo from '../assets/schoolLogo.png'
 import collegeLogo from '../assets/collegeLogo.png'
 import universityLogo from '../assets/universityLogo.png'
 import smitLogo from '../assets/smitLogo.png'
-import { duration } from "moment";
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
