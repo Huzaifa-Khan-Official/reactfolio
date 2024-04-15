@@ -79,6 +79,25 @@ const skillsIcons = [
     },
 ];
 
+// education
+const education = [
+    {
+        instituteName: "University of Karachi",
+        degreeName: "Bachelor of Computer Science",
+        duration: "January 2024 - December 2027"
+    },
+    {
+        instituteName: "Govt. College For Men Nazimabad",
+        degreeName: "Intermediate in Science General Group",
+        duration: "November 2021 - October 2023"
+    },
+    {
+        instituteName: "Mumtaz Vision Academy",
+        degreeName: "Matriculation in Science Group",
+        duration: "November 2021 - October 2023"
+    }
+]
+
 // skillsList
 const skillsList = [
     "Develop highly interactive Front end / User Interfaces for your websites.",
@@ -202,4 +221,4 @@ const themes = {
     nightModeImg
 }
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education }

@@ -52,7 +52,7 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#skills">
-                                    skills
+                                    about
                                     <span id="line"></span>
                                 </a>
                             </li>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 <div id='home' className={`homeDiv ${darkTheme && "darkTheme"} px-3`}>
                     <HomeDiv />
                 </div>
-                <div id='skills' className="skillsDiv px-3 py-5 pb-0 pb-lg-4">
+                <div id='skills' className="skillsDiv px-3 py-5">
                     <Skills />
                 </div>
                 <div id='service' className="services px-3 py-5">
