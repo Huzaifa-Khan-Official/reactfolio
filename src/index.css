@@ -471,6 +471,26 @@ body {
     margin: 0;
 }
 
+.instituteLogo {
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem #0000004d;
+    object-fit: cover;
+    height: 4rem;
+    margin-bottom: .5rem;
+    margin-right: 0;
+    width: 4rem;
+}
+
+.singleEducation {
+    border-bottom: 2px solid hsla(0, 0%, 83%, .397);
+    transition: all .3s;
+}
+
+.singleEducation:hover {
+    border-bottom-color: #0db3c7;
+    cursor: pointer;
+}
+
 /* end skillsDiv */
 
 /* servicesDiv */
@@ -539,7 +559,7 @@ body {
     text-transform: capitalize;
 }
 
-.thumbs {
+.thumbs, .thumbs-wrapper {
     display: none;
 }
 
@@ -834,7 +854,10 @@ body {
 .darkTheme .singlePortfolio h3,
 .darkTheme .singlePortfolio p,
 .darkTheme .getInTouchDiv h2,
-.darkTheme .mediaBody h4 {
+.darkTheme .mediaBody h4,
+.darkTheme .instituteName,
+.darkTheme .degreeName,
+.darkTheme .duration {
     transition: all .3s;
     color: #fff;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import skillsImg from '../assets/skillsImg.svg'
 import skillsListIcon from '../assets/skillsListIcon.png'
-import { skillsList, skillsIcons, skillsSubTitle, education } from '../Constants/Constants'
+import { skillsList, skillsIcons, skillsSubTitle, education, professionalExperience } from '../Constants/Constants'
 import { motion } from 'framer-motion'
 
 export default function Skills() {
@@ -111,9 +111,9 @@ export default function Skills() {
             </div >
 
             <motion.div
-                className="portfolioTitleDiv mb-5 ps-md-4 ps-4"
-                initial={{ opacity: 0, y: 75 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="portfolioTitleDiv ps-md-4 ps-4"
+                initial={{ opacity: 0, x: -75 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >
@@ -121,14 +121,19 @@ export default function Skills() {
                     Education
                 </h2>
             </motion.div>
-            <div className="row gap-4 ps-md-4 ps-2">
+            <div className="row gap-4 px-md-4 px-2 pe-4 mt-4">
                 {
                     education.map((education, index) => {
                         return (
                             <motion.div
-                                className='col-12'
+                                className='col-12 singleEducation d-flex flex-column gap-1 py-4 pt-2'
                                 key={index}
+                                initial={{ opacity: 0, y: 75 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
                             >
+                                <img src={education.img} alt="" className="instituteLogo" />
                                 <h5 className="instituteName">
                                     {education.instituteName}
                                 </h5>
@@ -137,6 +142,45 @@ export default function Skills() {
                                 </h5>
                                 <p className="duration">
                                     {education.duration}
+                                </p>
+                            </motion.div>
+                        )
+                    })
+                }
+            </div>
+
+            <motion.div
+                className="portfolioTitleDiv ps-md-4 ps-4 mt-4"
+                initial={{ opacity: 0, x: -75 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
+                <h2 className="portfolioTitle">
+                    Professional Experience
+                </h2>
+            </motion.div>
+            <div className="row gap-4 px-md-4 px-2 pe-4 mt-4">
+                {
+                    professionalExperience.map((value, index) => {
+                        return (
+                            <motion.div
+                                className='col-12 singleEducation d-flex flex-column gap-1 py-4 pt-2'
+                                key={index}
+                                initial={{ opacity: 0, y: 75 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
+                                <img src={value.img} alt="" className="instituteLogo" />
+                                <h5 className="instituteName">
+                                    {value.name}
+                                </h5>
+                                <h5 className="degreeName">
+                                    {value.role}
+                                </h5>
+                                <p className="duration">
+                                    {value.duration}
                                 </p>
                             </motion.div>
                         )

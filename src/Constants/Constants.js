@@ -42,6 +42,13 @@ import { FaFacebookF } from "react-icons/fa";
 import lightModeImg from '../assets/lightModeImg.png'
 import nightModeImg from '../assets/nightModeImg.png'
 
+// institutesImages
+import schoolLogo from '../assets/schoolLogo.png'
+import collegeLogo from '../assets/collegeLogo.png'
+import universityLogo from '../assets/universityLogo.png'
+import smitLogo from '../assets/smitLogo.png'
+import { duration } from "moment";
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // name
@@ -82,20 +89,46 @@ const skillsIcons = [
 // education
 const education = [
     {
+        img: universityLogo,
         instituteName: "University of Karachi",
         degreeName: "Bachelor of Computer Science",
         duration: "January 2024 - December 2027"
     },
     {
+        img: collegeLogo,
         instituteName: "Govt. College For Men Nazimabad",
         degreeName: "Intermediate in Science General Group",
         duration: "November 2021 - October 2023"
     },
     {
+        img: schoolLogo,
         instituteName: "Mumtaz Vision Academy",
         degreeName: "Matriculation in Science Group",
         duration: "November 2021 - October 2023"
     }
+]
+
+// professionalExperience
+
+const professionalExperience = [
+    {
+        img: smitLogo,
+        name: "Saylani Mass IT Training Program",
+        role: "Trainer Assistant for Web & Mobile App Development Course",
+        duration: "January 2024 - Continue"
+    },
+    {
+        img: smitLogo,
+        name: "Saylani Mass IT Training Program",
+        role: "Learning Web & Mobile App Development Course",
+        duration: "June 2023 - Continue"
+    },
+    {
+        img: smitLogo,
+        name: "Saylani Mass IT Training Program",
+        role: "Programming Essentials in Python",
+        duration: "December 2021 - March 2022"
+    },
 ]
 
 // skillsList
@@ -221,4 +254,4 @@ const themes = {
     nightModeImg
 }
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience }

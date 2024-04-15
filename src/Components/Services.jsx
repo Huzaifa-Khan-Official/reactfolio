@@ -23,7 +23,7 @@ export default function Services() {
                                 transition={{ duration: 1 }}
                             >
                                 <div className="d-flex flex-column gap-3 ">
-                                    <div className="serviceHeadingDiv d-flex align-items-center gap-2">
+                                    <div className="serviceHeadingDiv d-flex flex-wrap align-items-center gap-2">
                                         <div className="iconDiv">
                                             <BsJournalBookmarkFill className="sevicesIcon" />
                                         </div>
