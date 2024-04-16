@@ -47,6 +47,7 @@ import schoolLogo from '../assets/schoolLogo.png'
 import collegeLogo from '../assets/collegeLogo.png'
 import universityLogo from '../assets/universityLogo.png'
 import smitLogo from '../assets/smitLogo.png'
+import digiskillsLogo from '../assets/digiskillsLogo.png'
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
@@ -114,19 +115,29 @@ const professionalExperience = [
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
         role: "Trainer Assistant for Web & Mobile App Development Course",
-        duration: "January 2024 - Continue"
+        duration: "January 2024 - Continue",
+        certified: false
     },
     {
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
-        role: "Learning Web & Mobile App Development Course",
-        duration: "June 2023 - Continue"
+        role: "Web & Mobile App Development Course",
+        duration: "June 2023 - Continue",
+        certified: false
     },
     {
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
         role: "Programming Essentials in Python",
-        duration: "December 2021 - March 2022"
+        duration: "December 2021 - March 2022",
+        certified: true
+    },
+    {
+        img: digiskillsLogo,
+        name: "DigiSkills",
+        role: "COMMUNICATION AND SOFT SKILLS",
+        duration: "July 2022 - October 2022",
+        certified: true
     },
 ]
 

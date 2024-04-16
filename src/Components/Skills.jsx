@@ -111,7 +111,7 @@ export default function Skills() {
             </div >
 
             <motion.div
-                className="portfolioTitleDiv ps-md-4 ps-4"
+                className="portfolioTitleDiv ps-md-4 ps-4 mt-3"
                 initial={{ opacity: 0, x: -75 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -177,7 +177,7 @@ export default function Skills() {
                                     {value.name}
                                 </h5>
                                 <h5 className="degreeName">
-                                    {value.role}
+                                    {value.role} <span>{value.certified && "(Certified)"}</span>
                                 </h5>
                                 <p className="duration">
                                     {value.duration}
