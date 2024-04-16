@@ -1,4 +1,3 @@
-import navbarLogo from '../assets/navbarLogo.png'
 import { useContext, useEffect, useState } from 'react';
 import { FaBars, FaHandPointUp } from "react-icons/fa";
 import HomeDiv from './HomeDiv';
@@ -9,7 +8,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import { motion } from "framer-motion"
 import { Theme } from '../Context/Context';
-import { themes } from '../Constants/Constants';
+import { navbarLogo, themes } from '../Constants/Constants';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);

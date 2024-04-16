@@ -5,7 +5,7 @@ import htmlIcon from '../assets/htmlIcon.png'
 import jsonIcon from '../assets/jsonIcon.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
-import { name } from '../Constants/Constants'
+import { name, resume } from '../Constants/Constants'
 
 export default function HomeDiv() {
     return (
@@ -61,7 +61,7 @@ export default function HomeDiv() {
                     </motion.h4>
 
                     <motion.div
-                        className="btnDiv"
+                        className="btnDiv d-flex gap-3 justify-content-center align-items-center flex-wrap"
                         initial={{ opacity: 0, x: -75 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -70,6 +70,12 @@ export default function HomeDiv() {
                         <button className='btn'>
                             <a href="#contact">
                                 contact me
+                            </a>
+                        </button>
+
+                        <button className='btn'>
+                            <a href={resume} target='_blank' rel='noreferrer'>
+                                see my resume
                             </a>
                         </button>
                     </motion.div>

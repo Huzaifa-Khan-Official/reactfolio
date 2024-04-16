@@ -49,10 +49,17 @@ import universityLogo from '../assets/universityLogo.png'
 import smitLogo from '../assets/smitLogo.png'
 import digiskillsLogo from '../assets/digiskillsLogo.png'
 
+// navbarLogo
+import navbarImg from '../assets/navbarLogo.png'
+
+
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
 
 // name
 const name = "Huzaifa Khan";
+
+// navbarLogo
+const navbarLogo = navbarImg;
 
 // skillsIcons
 const skillsIcons = [
@@ -108,8 +115,10 @@ const education = [
     }
 ]
 
-// professionalExperience
+// resumeLink
+const resume = "https://drive.google.com/file/d/1IpIB0nlG-oXArb5kYphPIqIEWLHf7eqa/view?usp=sharing";
 
+// professionalExperience
 const professionalExperience = [
     {
         img: smitLogo,
@@ -264,4 +273,4 @@ const themes = {
     nightModeImg
 }
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience, resume, navbarLogo }
