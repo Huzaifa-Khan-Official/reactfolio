@@ -403,7 +403,7 @@ body {
 .skillsDiv {
     padding-bottom: 70px !important;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .skillsHeading {

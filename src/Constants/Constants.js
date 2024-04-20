@@ -111,7 +111,7 @@ const education = [
         img: schoolLogo,
         instituteName: "Mumtaz Vision Academy",
         degreeName: "Matriculation in Science Group",
-        duration: "November 2021 - October 2023"
+        duration: "March 2019 - October 2021"
     }
 ]
 

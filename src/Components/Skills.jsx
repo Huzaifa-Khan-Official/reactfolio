@@ -55,17 +55,19 @@ export default function Skills() {
                         </motion.p>
 
                         <div className="skillIconsDiv">
-                            <ul className='iconsList d-flex gap-4 align-items-center justify-content-center flex-wrap'>
+                            <motion.ul
+                                className='iconsList d-flex align-items-center justify-content-center flex-wrap'
+                                initial={{ opacity: 0, x: 75 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
                                 {
                                     skillsIcons.map((v, i) => {
                                         return (
                                             <motion.li
-                                                className='singleIcon d-flex justify-content-center align-items-center flex-column'
+                                                className='singleIcon d-flex justify-content-center align-items-center flex-column mx-3'
                                                 key={i}
-                                                initial={{ opacity: 0, x: 75 }}
-                                                whileInView={{ opacity: 1, x: 0 }}
-                                                viewport={{ once: true }}
-                                                transition={{ duration: 1 }}
                                             >
                                                 <span className='skillsIcon'>
                                                     {v.icon}
@@ -77,7 +79,7 @@ export default function Skills() {
                                         )
                                     })
                                 }
-                            </ul>
+                            </motion.ul>
                         </div>
 
                         <div className="skillsListDiv">
