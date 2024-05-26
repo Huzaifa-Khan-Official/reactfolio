@@ -35,6 +35,13 @@ import project4Img2 from '../assets/Project4/2.png'
 import project4Img3 from '../assets/Project4/3.png'
 import project4Img4 from '../assets/Project4/4.png'
 
+// for project 5
+import project5Img1 from '../assets/Project5/1.png'
+import project5Img2 from '../assets/Project5/2.png'
+import project5Img3 from '../assets/Project5/3.png'
+import project5Img4 from '../assets/Project5/4.png'
+import project5Img5 from '../assets/Project5/5.png'
+
 // socialIcons
 import { FaFacebookF } from "react-icons/fa";
 
@@ -242,6 +249,18 @@ const portfolio = [
         title: "Todo Website",
         description: "I have developed a fully responsive todo website that efficiently stores data for each user, and authentication is implemented using Firebase, ensuring secure access to user accounts. Users can perform CRUD operations on todos within the website, enhancing productivity within the platform.",
         link: "https://firebase-todo-huzaifa.vercel.app/"
+    },
+    {
+        images: [
+            project5Img1,
+            project5Img2,
+            project5Img3,
+            project5Img4,
+            project5Img5,
+        ],
+        title: "Web Agency",
+        description: "This website depicts a web agency's homepage. The website highlights the agency’s services, which include refreshing design, speed optimization, and full customization. The website also features testimonials from satisfied clients and a call to action to download the agency’s app.",
+        link: "https://next-agency-web.vercel.app/"
     },
 ]
 
