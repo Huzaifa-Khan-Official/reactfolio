@@ -1,11 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { socialLinks } from '../Constants/Constants'
-import { Theme } from '../Context/Context';
 
 export default function Footer() {
-    // const { darkTheme, setDarkTheme } = useContext(Theme);
-
-    // console.log(darkTheme);
     return (
         <div className='container'>
             <div className="row">
@@ -15,7 +11,7 @@ export default function Footer() {
                             socialLinks.map((socialLink, index) => {
                                 return (
                                     <li key={index}>
-                                        <a href={socialLink.link} target='_blank' className='d-flex justify-content-center align-items-center'>
+                                        <a href={socialLink.link} rel="noreferrer" target='_blank' className='d-flex justify-content-center align-items-center'>
                                             {
                                                 socialLink.icon
                                             }
@@ -29,7 +25,7 @@ export default function Footer() {
                 <div className="col-sm-8 copyrightDiv">
                     <h6>
                         Made with love by &nbsp;
-                        <a href="https://github.com/Huzaifa-Khan-Official" target='_blank'>
+                        <a href="https://github.com/Huzaifa-Khan-Official" rel="noreferrer" target='_blank'>
                             Huzaifa Khan
                         </a>
                     </h6>

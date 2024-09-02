@@ -1,7 +1,8 @@
-import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaLinkedinIn } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaLinkedinIn, FaNodeJs } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
+import expressIcon from "../assets/expressjs-icon.png";
 
 // for project 1
 import project1Img1 from '../assets/Project1/1.png'
@@ -58,6 +59,7 @@ import digiskillsLogo from '../assets/digiskillsLogo.png'
 
 // navbarLogo
 import navbarImg from '../assets/navbarLogo.png'
+import { SiMongodb } from "react-icons/si";
 
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
@@ -87,16 +89,28 @@ const skillsIcons = [
         title: "JavaScript"
     },
     {
-        icon: <RiReactjsLine />,
-        title: "reactjs"
-    },
-    {
         icon: <IoLogoFirebase />,
         title: "firebase"
     },
     {
+        icon: <RiReactjsLine />,
+        title: "reactjs"
+    },
+    {
         icon: <TbBrandNextjs />,
         title: "Nextjs"
+    },
+    {
+        icon: <SiMongodb />,
+        title: "MongoDB"
+    },
+    {
+        icon: <img src={expressIcon} alt="expressjs" />,
+        title: "nodejs"
+    },
+    {
+        icon: <FaNodeJs />,
+        title: "nodejs"
     },
 ];
 
@@ -131,7 +145,7 @@ const professionalExperience = [
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
         role: "Trainer Assistant for Web & Mobile App Development Course",
-        duration: "January 2024 - Continue",
+        duration: "January 2024 - May 2024 (5 Months)",
         certified: false
     },
     {
