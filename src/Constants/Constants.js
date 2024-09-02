@@ -1,4 +1,4 @@
-import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaLinkedinIn, FaNodeJs } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedinIn, FaNodeJs, FaPython } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -59,7 +59,7 @@ import digiskillsLogo from '../assets/digiskillsLogo.png'
 
 // navbarLogo
 import navbarImg from '../assets/navbarLogo.png'
-import { SiMongodb } from "react-icons/si";
+import { SiDjango, SiMongodb, SiTypescript } from "react-icons/si";
 
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
@@ -74,11 +74,11 @@ const navbarLogo = navbarImg;
 const skillsIcons = [
     {
         icon: <FaHtml5 />,
-        title: "Html-5"
+        title: "Html"
     },
     {
         icon: <FaCss3Alt />,
-        title: "css3"
+        title: "CSS"
     },
     {
         icon: <FaBootstrap />,
@@ -89,16 +89,20 @@ const skillsIcons = [
         title: "JavaScript"
     },
     {
+        icon: <SiTypescript />,
+        title: "TypeScript"
+    },
+    {
         icon: <IoLogoFirebase />,
-        title: "firebase"
+        title: "Firebase"
     },
     {
         icon: <RiReactjsLine />,
-        title: "reactjs"
+        title: "React"
     },
     {
         icon: <TbBrandNextjs />,
-        title: "Nextjs"
+        title: "Next.JS"
     },
     {
         icon: <SiMongodb />,
@@ -106,11 +110,23 @@ const skillsIcons = [
     },
     {
         icon: <img src={expressIcon} alt="expressjs" />,
-        title: "nodejs"
+        title: "Express.JS"
     },
     {
         icon: <FaNodeJs />,
-        title: "nodejs"
+        title: "Node.JS"
+    },
+    {
+        icon: <FaPython />,
+        title: "Python"
+    },
+    {
+        icon: <SiDjango />,
+        title: "Django"
+    },
+    {
+        icon: <FaJava />,
+        title: "Java"
     },
 ];
 
@@ -120,7 +136,7 @@ const education = [
         img: universityLogo,
         instituteName: "University of Karachi",
         degreeName: "Bachelor of Computer Science",
-        duration: "January 2024 - December 2027"
+        duration: "January 2024 - December 2027 (expected)"
     },
     {
         img: collegeLogo,
@@ -152,21 +168,21 @@ const professionalExperience = [
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
         role: "Web & Mobile App Development Course",
-        duration: "June 2023 - Continue",
-        certified: false
+        duration: "June 2023 -  June 2024 (1 Year)",
+        certified: true
     },
     {
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
         role: "Programming Essentials in Python",
-        duration: "December 2021 - March 2022",
+        duration: "December 2021 - March 2022 (3 Months)",
         certified: true
     },
     {
         img: digiskillsLogo,
         name: "DigiSkills",
         role: "COMMUNICATION AND SOFT SKILLS",
-        duration: "July 2022 - October 2022",
+        duration: "July 2022 - October 2022 (3 Months)",
         certified: true
     },
 ]

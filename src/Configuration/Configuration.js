@@ -3,22 +3,19 @@ import { getAnalytics } from "firebase/analytics";
 import { getMessaging } from "firebase/messaging";
 import { getFirestore } from "firebase/firestore";
 
-
 const firebaseConfig = {
-    apiKey: "AIzaSyAedqKe1ryAEcZfFMUTHA_MLqlKXcp9jV8",
-    authDomain: "huzaifa-reacfolio.firebaseapp.com",
-    projectId: "huzaifa-reacfolio",
-    storageBucket: "huzaifa-reacfolio.appspot.com",
-    messagingSenderId: "286901249528",
-    appId: "1:286901249528:web:cd7ce2d719f9c16d00a20d",
-    measurementId: "G-LMME11M7TW"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
-
-
 
 export { messaging, db }
