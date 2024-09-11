@@ -1,8 +1,7 @@
 import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedinIn, FaNodeJs, FaPython } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import expressIcon from "../assets/expressjs-icon.png";
+import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
 
 // for project 1
 import project1Img1 from '../assets/Project1/1.png'
@@ -59,7 +58,7 @@ import digiskillsLogo from '../assets/digiskillsLogo.png'
 
 // navbarLogo
 import navbarImg from '../assets/navbarLogo.png'
-import { SiDjango, SiMongodb, SiTypescript } from "react-icons/si";
+import { SiAntdesign, SiDjango, SiExpress, SiMongodb, SiPostman, SiTypescript } from "react-icons/si";
 
 
 const skillsSubTitle = "Crazy full stack developer who wants to explore every tech stack";
@@ -109,12 +108,20 @@ const skillsIcons = [
         title: "MongoDB"
     },
     {
-        icon: <img src={expressIcon} alt="expressjs" />,
+        icon: <SiExpress />,
         title: "Express.JS"
     },
     {
         icon: <FaNodeJs />,
         title: "Node.JS"
+    },
+    {
+        icon: <SiAntdesign />,
+        title: "Ant Design"
+    },
+    {
+        icon: <SiPostman />,
+        title: "Postman"
     },
     {
         icon: <FaPython />,
@@ -127,6 +134,10 @@ const skillsIcons = [
     {
         icon: <FaJava />,
         title: "Java"
+    },
+    {
+        icon: <TbBrandCpp />,
+        title: "C++"
     },
 ];
 
