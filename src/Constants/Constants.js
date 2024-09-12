@@ -42,6 +42,29 @@ import project5Img3 from '../assets/Project5/3.png'
 import project5Img4 from '../assets/Project5/4.png'
 import project5Img5 from '../assets/Project5/5.png'
 
+
+// for project 5
+import project6Img1 from '../assets/Project6/1.png'
+import project6Img2 from '../assets/Project6/2.png'
+import project6Img3 from '../assets/Project6/3.png'
+import project6Img4 from '../assets/Project6/4.png'
+import project6Img5 from '../assets/Project6/5.png'
+import project6Img6 from '../assets/Project6/6.png'
+import project6Img7 from '../assets/Project6/7.png'
+import project6Img8 from '../assets/Project6/8.png'
+import project6Img9 from '../assets/Project6/9.png'
+import project6Img10 from '../assets/Project6/10.png'
+import project6Img11 from '../assets/Project6/11.png'
+import project6Img12 from '../assets/Project6/12.png'
+import project6Img13 from '../assets/Project6/13.png'
+import project6Img14 from '../assets/Project6/14.png'
+import project6Img15 from '../assets/Project6/15.png'
+import project6Img16 from '../assets/Project6/16.png'
+import project6Img17 from '../assets/Project6/17.png'
+import project6Img18 from '../assets/Project6/18.png'
+import project6Img19 from '../assets/Project6/19.png'
+import project6Img20 from '../assets/Project6/20.png'
+
 // socialIcons
 import { FaFacebookF } from "react-icons/fa";
 
