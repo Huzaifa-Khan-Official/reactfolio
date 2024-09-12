@@ -264,6 +264,33 @@ const servicesList = [
 const portfolio = [
     {
         images: [
+            project6Img1,
+            project6Img2,
+            project6Img3,
+            project6Img4,
+            project6Img5,
+            project6Img6,
+            project6Img7,
+            project6Img8,
+            project6Img9,
+            project6Img10,
+            project6Img11,
+            project6Img12,
+            project6Img13,
+            project6Img14,
+            project6Img15,
+            project6Img16,
+            project6Img17,
+            project6Img18,
+            project6Img19,
+            project6Img20,
+        ],
+        title: "Assignment Submission Portal",
+        description: "A web-based platform designed for streamlined assignment submissions and management. Teachers can create and manage assignments, while students can submit their work with ease. Features include user authentication, real-time updates, and a responsive interface. Built with MERN stack.",
+        link: "https://assignment-submission-portal.vercel.app/"
+    },
+    {
+        images: [
             project1Img1,
             project1Img2,
             project1Img3,
