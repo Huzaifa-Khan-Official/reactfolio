@@ -187,7 +187,7 @@ const education = [
 ]
 
 // resumeLink
-const resume = "https://drive.google.com/file/d/19LUCCBPKgCtk9CS9mGj8_gk5z9hbSdjW/view?usp=sharing";
+const resume = "https://drive.google.com/file/d/1L2GWi7aojZ7iLBxH-xRslXO8v6K5dP8k/view?usp=sharing";
 
 // professionalExperience
 const professionalExperience = [
