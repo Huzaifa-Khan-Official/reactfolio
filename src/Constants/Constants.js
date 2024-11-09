@@ -79,6 +79,10 @@ import universityLogo from '../assets/universityLogo.png'
 import smitLogo from '../assets/smitLogo.png'
 import digiskillsLogo from '../assets/digiskillsLogo.png'
 
+// certificatesImages
+import certificate1 from "../assets/certificates/Responsive Web Design Certificate.png"
+import certificate2 from "../assets/certificates/JavaScript Algorithms and Data Structures Beta Certificate.png"
+
 // navbarLogo
 import navbarImg from '../assets/navbarLogo.png'
 import { SiAntdesign, SiDjango, SiExpress, SiMongodb, SiPostman, SiTypescript } from "react-icons/si";
@@ -185,6 +189,22 @@ const education = [
         duration: "March 2019 - October 2021"
     }
 ]
+
+// certifications
+const certifications = [
+    {
+        img: certificate1,
+        certificateProvider: "freeCodeCamp",
+        certificationName: "Responsive Web Design",
+        issuedDate: "October 2023"
+    },
+    {
+        img: certificate2,
+        certificateProvider: "freeCodeCamp",
+        certificationName: "JavaScript Algorithms and Data Structures (Beta) Certificate",
+        issuedDate: "August 2024"
+    },
+];
 
 // resumeLink
 const resume = "https://drive.google.com/file/d/1L2GWi7aojZ7iLBxH-xRslXO8v6K5dP8k/view?usp=sharing";
@@ -383,4 +403,4 @@ const themes = {
     nightModeImg
 }
 
-export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience, resume, navbarLogo }
+export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience, resume, navbarLogo, certifications }
