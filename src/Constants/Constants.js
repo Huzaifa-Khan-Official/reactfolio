@@ -82,6 +82,16 @@ import digiskillsLogo from '../assets/digiskillsLogo.png'
 // certificatesImages
 import certificate1 from "../assets/certificates/Responsive Web Design Certificate.png"
 import certificate2 from "../assets/certificates/JavaScript Algorithms and Data Structures Beta Certificate.png"
+import certificate3 from "../assets/certificates/JavaScript_Essentials_1.png"
+import certificate4 from "../assets/certificates/JavaScript_Essentials_2.png"
+import certificate5 from "../assets/certificates/Python-Programming Essential-certificate.png"
+import certificate6 from "../assets/certificates/Python Fundamentals Diploma Certificate.png"
+import certificate7 from "../assets/certificates/React JS Tutorial Certificate offered by Great Learning Academy.jpg"
+import certificate8 from "../assets/certificates/MERN Stack Fundamentals certificate offered by Great Learning Academy.jpg"
+import certificate9 from "../assets/certificates/Career Essentials in Software Development by Microsoft and LinkedIn.png"
+import certificate10 from "../assets/certificates/Introduction to Career Skills in Software Development.png"
+import certificate11 from "../assets/certificates/Programming_Foundations_Fundamentals_By_Linkedin.png"
+import certificate12 from "../assets/certificates/communication & soft skils certificate.png"
 
 // navbarLogo
 import navbarImg from '../assets/navbarLogo.png'
@@ -201,8 +211,68 @@ const certifications = [
     {
         img: certificate2,
         certificateProvider: "freeCodeCamp",
-        certificationName: "JavaScript Algorithms and Data Structures (Beta) Certificate",
+        certificationName: "JavaScript Algorithms and Data Structures (Beta)",
         issuedDate: "August 2024"
+    },
+    {
+        img: certificate3,
+        certificateProvider: "cisco networking academy",
+        certificationName: "JavaScript Essentials 1",
+        issuedDate: "November 2024"
+    },
+    {
+        img: certificate4,
+        certificateProvider: "cisco networking academy",
+        certificationName: "JavaScript Essentials 2",
+        issuedDate: "November 2024"
+    },
+    {
+        img: certificate5,
+        certificateProvider: "cisco networking academy",
+        certificationName: "Python Programming Essential",
+        issuedDate: "March 2022"
+    },
+    {
+        img: certificate6,
+        certificateProvider: "alison",
+        certificationName: "Python Fundamentals Diploma",
+        issuedDate: "february 2023"
+    },
+    {
+        img: certificate7,
+        certificateProvider: "Great Learning Academy",
+        certificationName: "React JS Tutorial",
+        issuedDate: "September 2024"
+    },
+    {
+        img: certificate8,
+        certificateProvider: "Great Learning Academy",
+        certificationName: "MERN Stack Fundamentals",
+        issuedDate: "September 2024"
+    },
+    {
+        img: certificate9,
+        certificateProvider: "Microsoft and LinkedIn Learning",
+        certificationName: "Career Essentials in Software Development",
+        issuedDate: "September 2024"
+    },
+    {
+        img: certificate10,
+        certificateProvider: "LinkedIn Learning",
+        certificationName: "Introduction to Career Skills in Software Development",
+        issuedDate: "September 2024"
+    },
+    {
+        img: certificate11,
+        certificateProvider: "LinkedIn Learning",
+        certificationName: "Programming Foundations Fundamentals",
+        issuedDate: "September 2024"
+    },
+    {
+        img: certificate12,
+        certificateProvider: "DigiSkills",
+        certificationName: "communication & soft skils certificate",
+        issuedDate: "October 2022"
     },
 ];
 
