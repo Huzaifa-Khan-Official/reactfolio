@@ -1,8 +1,41 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import Marquee from "react-fast-marquee"
+import { certifications } from '../Constants/Constants'
 
-function Certificates() {
+const Certificates = () => {
     return (
-        <div>Certificates</div>
+        <div>
+            <motion.div
+                className="portfolioTitleDiv ps-md-4 ps-4 mt-4"
+                initial={{ opacity: 0, x: -75 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
+                <h2 className="portfolioTitle">
+                    certifications
+                </h2>
+            </motion.div>
+            <div className='px-3 justify-content-center  my-4'>
+                <Marquee className='py-2 overflow-hidden' pauseOnHover={true} gradient={true}>
+                    {
+                        certifications.map((certification, index) => {
+                            return (
+                                <div className='certificateDiv cardDiv ms-3' key={index}>
+                                    <img src={certification.img} alt={certification.certificationName} className='' />
+                                    <div className="certificateDetailDiv">
+                                        <h4 className="certificateName">Name: {certification.certificationName}</h4>
+                                        <h6 className="issuingOrganization">Issuing organization: {certification.certificateProvider}</h6>
+                                        <p className="issueDate">Issue date: {certification.issuedDate}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </Marquee>
+            </div>
+        </div>
     )
 }
 

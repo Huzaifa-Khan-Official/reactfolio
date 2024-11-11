@@ -3,6 +3,7 @@ import skillsImg from '../assets/skillsImg.svg'
 import skillsListIcon from '../assets/skillsListIcon.png'
 import { skillsList, skillsIcons, skillsSubTitle, education, professionalExperience } from '../Constants/Constants'
 import { motion } from 'framer-motion'
+import Certificates from './Certificates'
 
 export default function Skills() {
     return (
@@ -189,6 +190,8 @@ export default function Skills() {
                     })
                 }
             </div>
+
+            <Certificates />
         </>
     )
 }
