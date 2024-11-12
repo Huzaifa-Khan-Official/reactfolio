@@ -18,7 +18,7 @@ const Certificates = () => {
                 </h2>
             </motion.div>
             <div className='px-3 justify-content-center  my-4'>
-                <Marquee className='py-2 overflow-hidden' pauseOnHover={true} gradient={true}>
+                <Marquee className='py-2 overflow-hidden' pauseOnHover={true} gradient={true} gradientWidth={50}>
                     {
                         certifications.map((certification, index) => {
                             return (

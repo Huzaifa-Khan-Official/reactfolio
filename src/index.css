@@ -95,7 +95,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar-brand img {
@@ -1111,6 +1111,23 @@ body {
 
   .startLoader h1 {
     font-size: xx-large;
+  }
+
+  .certificateDiv img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .certificateDetailDiv h4 {
+    font-size: 16px;
+  }
+
+  .certificateDetailDiv h6 {
+    font-size: 14px;
+  }
+
+  .certificateDetailDiv p {
+    font-size: 10px;
   }
 }
 
