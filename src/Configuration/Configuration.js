@@ -18,4 +18,4 @@ const analytics = getAnalytics(app);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
-export { messaging, db }
+export { messaging, db, analytics }

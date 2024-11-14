@@ -17,7 +17,13 @@ const Certificates = () => {
                     certifications
                 </h2>
             </motion.div>
-            <div className='px-3 justify-content-center  my-4'>
+            <motion.div
+                className='px-3 justify-content-center  my-4'
+                initial={{ opacity: 0, y: 75 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+            >
                 <Marquee className='py-2 overflow-hidden' pauseOnHover={true} gradient={true} gradientWidth={50}>
                     {
                         certifications.map((certification, index) => {
@@ -34,7 +40,7 @@ const Certificates = () => {
                         })
                     }
                 </Marquee>
-            </div>
+            </motion.div>
         </div>
     )
 }

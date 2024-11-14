@@ -46,7 +46,7 @@ export default function Portfolio() {
 
                                 <div className='singleProjectBtnDiv d-flex justify-content-center'>
                                     <button className='singleProjectBtn'>
-                                        <a href={`${singleProject.link}`} target='_blank'>
+                                        <a href={`${singleProject.link}`} target='_blank' rel="noreferrer">
                                             visit website
                                         </a>
                                     </button>
