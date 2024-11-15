@@ -78,6 +78,7 @@ import collegeLogo from '../assets/collegeLogo.png'
 import universityLogo from '../assets/universityLogo.png'
 import smitLogo from '../assets/smitLogo.png'
 import digiskillsLogo from '../assets/digiskillsLogo.png'
+import defaultCompanyLogo from "../assets/defaultCompanyLogo.png"
 
 // certificatesImages
 import certificate1 from "../assets/certificates/Responsive Web Design Certificate.png"
@@ -281,6 +282,13 @@ const resume = "https://drive.google.com/file/d/1L2GWi7aojZ7iLBxH-xRslXO8v6K5dP8
 
 // professionalExperience
 const professionalExperience = [
+    {
+        img: defaultCompanyLogo,
+        name: "UxBolt",
+        role: "Frontend Intern",
+        duration: "June 2024 - September 2024 (4 Months)",
+        certified: false
+    },
     {
         img: smitLogo,
         name: "Saylani Mass IT Training Program",
