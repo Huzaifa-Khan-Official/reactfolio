@@ -4,11 +4,10 @@ import { BsChatLeftText } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { contact } from '../Constants/Constants';
 import { useForm } from 'react-hook-form';
-import { addDoc, collection } from 'firebase/firestore';
-import { db } from '../Configuration/Configuration';
 import moment from 'moment';
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion'
+import sendEmail from '../lib/sendMail';
 
 export default function Contact() {
     const [isLoading, setIsLoading] = useState(false);
@@ -22,12 +21,12 @@ export default function Contact() {
         try {
             setIsLoading(true)
             data.time = moment().format("Do MMMM YYYY");
-            // await addDoc(collection(db, "data"), data);
+            const res = await sendEmail(data);
             setIsLoading(false)
             toast.success("Message submit successfully!")
         } catch (e) {
             setIsLoading(false)
-            toast.error("Something went wrong. Please try later!")
+            toast.error(e);
         }
     }
 

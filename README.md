@@ -29,6 +29,8 @@ Follow these steps to set up and run the project locally:
 3. **Create a `.env` File**  
    Create a `.env` file in the root of the project. Copy the variables from the provided `.env.local` file into this newly created `.env` file and adjust them as needed for your environment.
 
+   To get the env variables, make account on emailjs.com
+
 4. **Start the Development Server**  
    Start the React development server with the following command:  
    ```bash
