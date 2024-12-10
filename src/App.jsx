@@ -5,16 +5,31 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react';
 import StartLoader from './Components/StartLoader';
 import { Theme } from './Context/Context.js'
+import { name, navbarLogo } from './Constants/Constants.js';
 
 function App() {
   const [startLoader, setStarLoader] = useState(true);
   const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
+    updateTitle(name, navbarLogo);
     setTimeout(() => {
       setStarLoader(false)
     }, 3000);
   }, [])
+
+  function updateTitle(name, iconUrl) {
+    const link =
+      document.querySelector("link[rel*='icon']") ||
+      document.createElement("link");
+    link.type = "image/x-icon";
+    link.rel = "icon";
+    link.href = iconUrl || "%PUBLIC_URL%/favicon.ico";
+    document.title = `${name} | Portfolio` || "Huzaifa Khan | Portfolio";
+
+
+    document.head.appendChild(link);
+  }
 
   return (
     <Theme.Provider value={{ darkTheme, setDarkTheme }}>

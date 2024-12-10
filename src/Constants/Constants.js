@@ -455,7 +455,7 @@ const portfolio = [
 
 // contact
 const contact = {
-    number: "+923492089094",
+    number: "+92-3322433615",
     email: "huzaifakhanofficial01@gmail.com",
     location: "Metroville S.I.T.E. Karachi."
 }
@@ -480,5 +480,53 @@ const themes = {
     lightModeImg,
     nightModeImg
 }
+
+// for PWA Section
+// 
+const PWAConfiguration = {
+    shortName: name,
+    name: `${name} Portfolio`,
+    icons: [
+        {
+            src: "favicon.ico",
+            sizes: "64x64 32x32 24x24 16x16",
+            type: "image/x-icon",
+        },
+        {
+            src: "android-launchericon-48-48.png",
+            type: "image/png",
+            sizes: "48x48",
+        },
+        {
+            src: "android-launchericon-72-72.png",
+            type: "image/png",
+            sizes: "72x72",
+        },
+        {
+            src: "android-launchericon-96-96.png",
+            type: "image/png",
+            sizes: "96x96",
+        },
+        {
+            src: "android-launchericon-144-144.png",
+            type: "image/png",
+            sizes: "144x144",
+        },
+        {
+            src: "android-launchericon-192-192.png",
+            type: "image/png",
+            sizes: "192x192",
+        },
+        {
+            src: "android-launchericon-512-512.png",
+            type: "image/png",
+            sizes: "512x512",
+        },
+    ],
+    startUrl: ".",
+    display: "standalone",
+    themeColor: "#000000",
+    backgroundColor: "#ffffff",
+};
 
 export { skillsSubTitle, skillsIcons, skillsList, servicesList, portfolio, contact, socialLinks, name, themes, education, professionalExperience, resume, navbarLogo, certifications }

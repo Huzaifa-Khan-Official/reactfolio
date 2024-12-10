@@ -22,7 +22,7 @@ export default function Contact() {
         try {
             setIsLoading(true)
             data.time = moment().format("Do MMMM YYYY");
-            await addDoc(collection(db, "data"), data);
+            // await addDoc(collection(db, "data"), data);
             setIsLoading(false)
             toast.success("Message submit successfully!")
         } catch (e) {
